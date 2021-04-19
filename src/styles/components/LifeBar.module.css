@@ -1,0 +1,23 @@
+.lifeBar {
+    display: flex;
+    align-items: center;
+}
+
+.lifeBar span {
+    font-size: 1rem;
+}
+
+.lifeBar > div {
+    flex: 1;
+    height: 15px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.lifeBar > div > div {
+    height: 15px;
+    border-radius: 4px;
+    background: var(--red);
+}

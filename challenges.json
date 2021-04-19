@@ -1,0 +1,98 @@
+[
+  {
+    "type": "historia",
+    "description": "Na história recente do Brasil, foi realizado um ato político de impedimento do Presidente da República, com forte participação e apoio populares, por meio de uma manifestação de rua, constituída sobretudo por jovens conhecidos como caras-pintadas.\nA manifestação popular mencionada refere-se ao impedimento do ex-Presidente da República.",
+  "answerOptions": [
+  {"answerText": "Ernesto Geisel", "isCorrect": false },
+  {"answerText": "Fernando Collor de Melo", "isCorrect": true},
+  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
+  {"answerText": "Itamar Franco", "isCorrect": false}],
+    "amount": 80,
+    "money":10,
+    "questionType":"options"
+  },
+  {
+    "type": "historia",
+    "description": "Vamos testar seus conhecimentos sobre a história do Brasil.\n Informe os anos de início e fim do período imperial: ",
+  "answerOptions": [
+  {"answerText": "1822", "isCorrect": true, "hidden": false},
+  {"answerText": "1889", "isCorrect": true, "hidden": false},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "historia",
+    "description": "Você entende da história da arte? Quais das imagens abaixo representam o retrato do famoso pintor Vicent Vann Gogh?",
+  "answerOptions": [
+  {"answerText": "/questionsImages/RetratoGaughi.jpg", "isCorrect": false },
+  {"answerText": "/questionsImages/RetratoModigliani.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/RetratoPabloPicasso.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/RetratoVanhGogh.jpg", "isCorrect": true}],
+    "amount": 80,
+    "money":10,
+    "questionType":"images"
+  },
+  {
+    "type": "matematica",
+    "description": "Questão.",
+  "answerOptions": [
+  {"answerText": "Ernesto Geisel", "isCorrect": false},
+  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
+  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
+  {"answerText": "Itamar Franco", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "quimica",
+    "description": "Questão",
+  "answerOptions": [
+  {"answerText": "Ernesto Geisel", "isCorrect": false},
+  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
+  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
+  {"answerText": "Itamar Franco", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "fisica",
+    "description": "Questão",
+  "answerOptions": [
+  {"answerText": "Ernesto Geisel", "isCorrect": false},
+  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
+  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
+  {"answerText": "Itamar Franco", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "portugues",
+    "description": "Questão",
+  "answerOptions": [
+  {"answerText": "Ernesto Geisel", "isCorrect": false},
+  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
+  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
+  {"answerText": "Itamar Franco", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "geografia",
+    "description": "Questão",
+  "answerOptions": [
+  {"answerText": "Ernesto Geisel", "isCorrect": false},
+  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
+  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
+  {"answerText": "Itamar Franco", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  }
+]

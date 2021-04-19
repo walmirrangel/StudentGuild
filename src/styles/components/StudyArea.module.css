@@ -1,0 +1,47 @@
+.containerStudyArea {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.0rem;
+    align-content: center;
+}
+
+.containerStudyArea div button{
+   
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.4s;
+}
+
+.containerStudyArea div button.portugues{
+  background: steelblue;
+}
+
+.containerStudyArea div button.matematica{
+  background: tomato;
+}
+
+.containerStudyArea div button.geografia{
+  background: yellowgreen;
+}
+
+.containerStudyArea div button.historia{
+  background: teal;
+}
+
+.containerStudyArea div button.fisica{
+  background: turquoise;
+}
+
+.containerStudyArea div button.quimica{
+  background: wheat ;
+}

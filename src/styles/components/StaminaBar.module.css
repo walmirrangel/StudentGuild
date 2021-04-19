@@ -1,0 +1,23 @@
+.staminaBar {
+    display: flex;
+    align-items: center;
+}
+
+.staminaBar span {
+    font-size: 1rem;
+}
+
+.staminaBar > div {
+    flex: 1;
+    height: 15px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.staminaBar > div > div {
+    height: 15px;
+    border-radius: 4px;
+    background: var(--yellow);
+}
