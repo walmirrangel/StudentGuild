@@ -31,8 +31,7 @@ div.logoContainer {
 }
 
 
-main.mainPages,
-div.settingsPageContainer {
+main.mainPages, div.settingsPageContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -49,7 +48,7 @@ div.LogoutContainer {
 
 
 button.btnPage {
-  width: calc(100% - 5px); /* ~px border.btnPage */
+  width: calc(100% - 5px);
 
   background-color: transparent;
   text-decoration: none;
@@ -63,16 +62,14 @@ button.btnPage:hover {
   border-left: 5px solid #c0c0c0;
 }
 
-button.btnPage,
-button.btnPage img {
+button.btnPage, button.btnPage img {
     transition: 0.2s;
 }
 
 button.btnPage img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    filter: grayscale(10%);
 
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 /* Mobile */
