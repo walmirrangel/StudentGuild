@@ -61,6 +61,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   * **[NextJS](https://nextjs.org/)**
 
 # Quer testar o app?
+O aplicativo também tem port mobile.
 
 https://student-guild.vercel.app
 
