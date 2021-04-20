@@ -1,6 +1,6 @@
 .characterProfileContainer {
     display: flex;
-    height: 8rem;
+    height: 9rem;
     align-items: center;
     background-color: var(--blue);
     border-radius: 3px;
@@ -16,7 +16,7 @@
 }
 
 .characterProfileContainer div {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .backgroudImg {
@@ -35,7 +35,7 @@
 
 .characterProfileContainer div p {
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     color: var(--white);
     margin-right: 5rem;
     text-align: left;
@@ -43,10 +43,10 @@
 
 .characterProfileContainer div p img{
     margin-right: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 .characterProfileContainer div p:last-child {
     margin-right: 7.3rem;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
 }

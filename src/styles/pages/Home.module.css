@@ -1,11 +1,11 @@
-  .container {
-    height: 15vh;
-    max-width: 992px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
+.container {
+  height: 15vh;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .homeContainer {
