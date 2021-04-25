@@ -6,6 +6,7 @@ O projeto tem como intuito fornecer uma ferramenta de complemento de estudos par
 Se trata de um aplicativo de teste de conhecimentos dentro de um ambiente que simula um jogo de RPG. O core da aplicação são os desafios das perguntas, onde ao responder corretamente o usuário será premiado e ao responder incorretamente será punido.
 
 # Funcionalidades
+* Cadastro e login de usuários.
 * O jogador possui um avatar representativo personalizável atravéis de equipamentos.
 * Seu progresso é representado pelo level alcançado ao responder continuamente os desafios.
 * Cada desafio respondido corretamente fornece ao jogador uma quantia de experiência e uma quantia de dinheiro do jogo que pode ser utilzido na loja.
@@ -59,10 +60,14 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   * **[Typescript](https://www.typescriptlang.org/)**
   * **[ReactJS](https://pt-br.reactjs.org/)**
   * **[NextJS](https://nextjs.org/)**
+  * **[MongoDB](https://www.mongodb.com/)**
+  * **[Vercel](https://vercel.com/dashboard)**
+  * **[Axios](https://github.com/axios/axios)**
+  * **[NodJS](https://nodejs.org/en/)**
 
 # Quer testar o app?
 O aplicativo também tem port mobile.
-
+[desatualizado]
 https://student-guild.vercel.app
 
 # Rodando o Projeto
