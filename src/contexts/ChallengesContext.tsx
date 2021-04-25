@@ -4,6 +4,7 @@ import challenges from '../../challenges.json';
 import { LevelUpModal } from '../components/LevelUpModal';
 
 import { LowLifeStaminaWindow } from '../components/LowLifeStaminaWindow';
+import axios from 'axios';
 
 interface Challenge {
     type: string;
@@ -21,6 +22,7 @@ interface AnswerOptions {
 }
 
 interface ChallengesContextData {
+    nickname: string;
     level: number;
     currentExperience: number;
     experienceToNextLevel: number;
@@ -58,8 +60,13 @@ let countdowntimeout: NodeJS.Timeout;
 
 export function ChallengesProvider({ children, ...rest }: ChallengesProviderProps) {
 
+
+    
+
     /* configuração dos estados das barras e itens do jogo */
-    const [level, setLevel] = useState(rest.level ?? 1);
+    const [username, setUsername] = useState(Cookies.get("username") ?? '');
+    const [nickname, setNickname] = useState('no-user');
+    const [level, setLevel] = useState(1);
     const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
     const [currentMoney, setCurrentMoney] = useState(rest.currentMoney ?? 0);
     const [currentLife, setCurrentLife] = useState(rest.currentLife ?? 100);
@@ -75,7 +82,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
     /*verifica se foi respondido*/
     const [answerChallenge, setAnswerChallenge] = useState(true);
 
-
+    const [loading, setLoading] = useState(true)
     const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
     const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState (false);
@@ -84,17 +91,52 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
     /* configuração dos estados das barras e itens do jogo */
 
     useEffect(() => {
+        if (loading) {
+            axios
+              .get(`/api/users/${username}`)
+              .then((response) => {
+                setNickname(response.data.user.nickname);
+                setChallengesCompleted(response.data.user.challengesCompleted || 0)
+                setCurrentExperience(response.data.user.currentExperience || 0)
+                setCurrentMoney(response.data.user.currentMoney || 0)
+                setLevel(response.data.user.level || 1)
+                setCurrentLife(response.data.user.currentLife ?? 100)
+                setCurrentStamina(response.data.user.currentStamina ?? 100)
+                console.log(response);
+              })
+              .catch((e) => {
+                console.log('Erro ao buscar dados do user', e)
+              })
+              .finally(() => {
+                setLoading(false)
+              })
+          }  else {
+              if (nickname!= 'no-user'){
+                axios.post(`/api/users/`, {
+                    username,
+                    level: level || 1,
+                    currentExperience,
+                    currentLife,
+                    currentStamina,
+                    currentMoney,
+                    challengesCompleted,
+                })
+              }
+            }
+          }, [loading, level, currentExperience, currentLife, currentStamina, currentMoney, challengesCompleted])
+
+    useEffect(() => {
         Notification.requestPermission();
     }, [])
 
-    useEffect(() => {
-        Cookies.set('level', String(level));
-        Cookies.set('currentExperience', String(currentExperience));
-        Cookies.set('currentLife', String(currentLife));
-        Cookies.set('currentStamina', String(currentStamina));
-        Cookies.set('currentMoney', String(currentMoney));
-        Cookies.set('challengesCompleted', String(challengesCompleted));
-    }, [level, currentExperience, currentLife, currentStamina, currentMoney, challengesCompleted])
+    // useEffect(() => {
+    //     Cookies.set('level', String(level));
+    //     Cookies.set('currentExperience', String(currentExperience));
+    //     Cookies.set('currentLife', String(currentLife));
+    //     Cookies.set('currentStamina', String(currentStamina));
+    //     Cookies.set('currentMoney', String(currentMoney));
+    //     Cookies.set('challengesCompleted', String(challengesCompleted));
+    // }, [level, currentExperience, currentLife, currentStamina, currentMoney, challengesCompleted])
 
     useEffect(() => {
         if(currentLife <= 0 && currentStamina <= 0){
@@ -193,7 +235,8 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
     return(
         <ChallengesContext.Provider 
-         value ={{level, 
+         value ={{nickname,
+            level, 
          currentExperience,
          experienceToNextLevel, 
          currentLife, 

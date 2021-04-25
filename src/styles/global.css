@@ -5,7 +5,11 @@
 }
 
 body {
-    background: var(--background);
+    background-image:url("../../public/assets/fundotaverna.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: var(--text);
 }
 
@@ -48,6 +52,5 @@ a {
     --blue-dark: #4953B8;
     --blue-twitter: #2AA9E0;
     --yellow: #ecde58;
-    --background-character: #9b72ec;    
+    --background-character: #9b72ec;
 }
-

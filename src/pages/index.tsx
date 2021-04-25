@@ -1,101 +1,48 @@
-import Head from 'next/head'
-import {GetServerSideProps} from 'next';
-import { LifeBar } from "../components/LifeBar";
-import { StaminaBar } from "../components/StaminaBar";
-import { ExperienceBar } from "../components/ExperienceBar";
-import { CharacterProfile } from '../components/CharacterProfile';
-import { NumberQuestions } from '../components/NumberQuestions';
-import { Countdown } from '../components/Countdown';
-import { ChallengeBox } from '../components/ChallengeBox';
-import { StudyArea } from '../components/StudyArea';
-import { CountdownProvider } from '../contexts/CountdownContext';
+import { LoginProvider } from '../contexts/LoginContext'
 
-import styles from '../styles/pages/Home.module.css';
-import { ChallengesProvider } from '../contexts/ChallengesContext';
-import { useEffect, useState } from 'react';
+import { LoginForm } from '../components/LoginForm'
 
-interface HomeProps {
-  level: number;
-  currentExperience: number;
-  currentLife: number;
-  currentStamina: number;
-  currentMoney: number;
-  challengesCompleted: number;
-  showChallenge: boolean;
+import { GetServerSideProps } from 'next'
+
+import styles  from '../styles/pages/Login.module.css'
+import Cookies from 'js-cookie'
+
+interface LoginProps {
+    __avatar_url: string
+    __username:   string
+    __isLogged:   number
 }
 
-export default function Home(props: HomeProps) {
+export default function Login(props:LoginProps) {
+    Cookies.set('sidebar&FAB', 'disable') 
 
-  const [ showChallenge, setShowChallenge ] = useState(false);
-  const [ idStudyArea, setIdStudyArea ] = useState(null);
-  
-  function activeChallenge(){
-    setShowChallenge(true);
-  }
-  
-  function changeStudyArea(value){
-    setIdStudyArea(value)
-    console.log(idStudyArea);
-    activeChallenge();
-  }
-
-  useEffect(() => {
-    if (!setIdStudyArea) {
-      console.log(idStudyArea);
-    }
-  }, [idStudyArea,setIdStudyArea]);
-
-  return (
-    <ChallengesProvider 
-    level={props.level}
-    currentExperience={props.currentExperience}
-    currentLife={props.currentLife} 
-    currentStamina={props.currentStamina}
-    currentMoney={props.currentMoney}
-    challengesCompleted={props.challengesCompleted}
-    idStudyArea={idStudyArea}>
-      <div className={styles.container}>
-        <Head>
-          <title>Início | StudentGuild</title>
-        </Head>
-        <div className={styles.homeContainer}>
-        <CharacterProfile />
-        <LifeBar />
-        <StaminaBar />
-        <ExperienceBar />
-        <CountdownProvider>
-          {showChallenge? (
-            <section className={styles.homeSection} >
-              <div>
-                <NumberQuestions />
-                <Countdown />
-              </div>
-              <div>
-                <ChallengeBox />
-              </div>
-            </section>
-            ) : (
-              <StudyArea setStudyArea={changeStudyArea}/>
-              )}
-        </CountdownProvider>
-        </div>
-      </div>
-    </ChallengesProvider>
-  )
+    return (
+        <LoginProvider
+        isLogged
+        >
+            <div className={styles.container}>
+                <main>
+                    <div className={styles.containerLogin}>
+                        <h3>Bem-vindo ao Student Guild</h3>
+                        <div>
+                            <p>Faça login para começar suas aventuras!</p>
+                        </div>
+                        <LoginForm />
+                    </div>
+                </main>
+            </div>
+        </LoginProvider>
+    )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  
-  const { level, currentExperience, currentLife, currentStamina, currentMoney, challengesCompleted } = context.req.cookies;
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { __username, __avatar_url, __isLogged } = ctx.req.cookies
 
   return {
-    props: {
-      level: Number(level), 
-      currentExperience: Number(currentExperience), 
-      currentLife: Number(currentLife), 
-      currentStamina: Number(currentStamina),
-      currentMoney: Number(currentMoney), 
-      challengesCompleted: Number(challengesCompleted)
-    }
+      props: {
+          __avatar_url: String(__avatar_url),
+          __username:   String(__username),
+          __isLogged:   Number(__isLogged)
+      }
   }
 }

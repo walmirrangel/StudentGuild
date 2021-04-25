@@ -1,0 +1,52 @@
+/* Desktop */
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.form p {
+    text-align: left;
+    width: 100%;
+    margin-top: 0.8rem;
+    border-bottom: 2px solid lightgray;
+}
+
+.form a {
+    text-align: left;
+    width: 100%;
+    margin-top: 0.5rem;
+    color: blue;
+}
+
+.form input {
+    margin-top: 0.4rem;
+    height: 2.5rem;
+    width: 100%;
+
+}
+.form a:focus {
+    box-shadow:blue !important;
+    outline:blue !important;
+    border-color: blue !important;
+}
+
+.btnSubmit{
+    background: var(--green);
+    color: var(--white);
+    width: 90%;
+    height: 4rem;
+    border-radius: 4px;
+    font-size: 12pt;
+    cursor: pointer;
+    margin-top: 4rem;
+    box-shadow: 1px 2px 5px #1b1b1b;
+  }
+
+
+/* Tablet & Mobile */
+@media (max-width: 500px) {
+    .form {
+        justify-content: center;
+    }
+}

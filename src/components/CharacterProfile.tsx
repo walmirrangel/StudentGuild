@@ -3,7 +3,7 @@ import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/CharacterProfile.module.css';
 
 export function CharacterProfile() {
-    const { level, currentMoney } = useContext(ChallengesContext);
+    const { nickname, level, currentMoney } = useContext(ChallengesContext);
 
     return (
         <div className={styles.characterProfileContainer}>
@@ -11,7 +11,7 @@ export function CharacterProfile() {
                 <img src="https://i.ibb.co/d4yQmk1/char1.png" alt="Personagem" />
             </div>
             <div>
-                <strong>Usuario cadastrado</strong>
+                <strong>{nickname}</strong>
                 <p>
                     <img src="icons/level.svg" alt="level"/>
                     Level {level}

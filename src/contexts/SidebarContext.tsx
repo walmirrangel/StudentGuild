@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, useEffect } from "react"
+import { createContext, useState, ReactNode } from "react"
 
 import Cookies from 'js-cookie'
 
@@ -16,25 +16,32 @@ interface SidebarProviderProps {
 export const SidebarContext = createContext({} as SidebarContextData)
 
 export function SidebarProvider({ children }: SidebarProviderProps) {
-    const [activePage, setActivePage] = useState('home') 
+    const [activePage, setActivePage] = useState(Cookies.get('activePage') ?? 'Challenge') 
 
     function goHome() {
+        sidebarON()
         setActivePage('home')
         Cookies.set('activePage', 'home')
     }
     function goStore() {
-        setActivePage('settings')
-        Cookies.set('activePage', 'settings')
+        sidebarON()
+        setActivePage('store')
+        Cookies.set('activePage', 'store')
     }
     function goLeaderboard() {
-        setActivePage('leaderbord')
-        Cookies.set('activePage', 'leaderbord')
+        sidebarON()
+        setActivePage('leaderboardPage')
+        Cookies.set('activePage', 'leaderboardPage')
     }
     function Logout() {
-        setActivePage('settings')
-        Cookies.set('activePage', 'settings')
+        sidebarON()
+        setActivePage('LogoutPage')
+        Cookies.set('activePage', 'LogoutPage')
     }
-    
+
+    const sidebarON  = () => Cookies.set('sidebar&FAB', 'enable')
+    const sidebarOFF = () => Cookies.set('sidebar&FAB', 'disabled')
+
     return(
         <SidebarContext.Provider value={{
             activePage,
