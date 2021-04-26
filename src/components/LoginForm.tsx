@@ -5,11 +5,6 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 import styles  from '../styles/components/LoginForm.module.css'
 
-const preventDefault = f => e => {
-    e.preventDefault()
-    f(e)
-}
-
 export function LoginForm() {
     const { verifyUser } = useContext(LoginContext)
     const [username, setUsername] = useState('');

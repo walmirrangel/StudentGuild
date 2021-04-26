@@ -4,11 +4,9 @@ import {
     createContext,
     useContext,
     useState,
-    useEffect,
     ReactNode
 }                               from 'react'
 import Router                   from 'next/router'
-import Cookies                  from 'js-cookie'
 
 interface LoginContextData {
     isLogged:boolean;
