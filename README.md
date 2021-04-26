@@ -63,7 +63,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   * **[MongoDB](https://www.mongodb.com/)**
   * **[Vercel](https://vercel.com/dashboard)**
   * **[Axios](https://github.com/axios/axios)**
-  * **[NodJS](https://nodejs.org/en/)**
+  * **[NodJeS](https://nodejs.org/en/)**
+  * **[Materia-UI](https://material-ui.com/pt/)**
 
 # Quer testar o app?
 O aplicativo também tem port mobile.
