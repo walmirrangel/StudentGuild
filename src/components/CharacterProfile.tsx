@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
-import { StoreContext } from '../contexts/StoreContext';
 import styles from '../styles/components/CharacterProfile.module.css';
 
 export function CharacterProfile() {

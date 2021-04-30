@@ -1,5 +1,4 @@
 import { useContext, useState } from 'react';
-import { StoreContext } from '../contexts/StoreContext';
 import armors from '../JSON/armors.json';
 import swords from '../JSON/swords.json';
 import helmet from '../JSON/helmet.json';

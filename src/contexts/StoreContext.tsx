@@ -1,8 +1,6 @@
 import { createContext, useState, ReactNode, useEffect, useContext } from 'react';
 import Inventory from '../components/Inventory';
 import Loja from '../components/Loja';
-import armors from '../JSON/armors.json';
-import Store from '../pages/Store';
 import { ChallengesContext, ChallengesProvider } from './ChallengesContext';
 
 import styles  from '../styles/components/Store.module.css'

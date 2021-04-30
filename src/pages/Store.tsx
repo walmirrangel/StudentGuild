@@ -1,5 +1,3 @@
-
-import axios from 'axios'
 import { CharacterProfile } from '../components/CharacterProfile'
 import { LifeBar } from '../components/LifeBar'
 import { StaminaBar } from '../components/StaminaBar'
@@ -7,11 +5,8 @@ import { ExperienceBar } from '../components/ExperienceBar'
 
 import { ChallengesContext, ChallengesProvider } from '../contexts/ChallengesContext';
 import { GetServerSideProps } from 'next'
-import { useContext, useState } from 'react'
-import { Inventory } from '../components/Inventory'
-import Loja from '../components/Loja'
+import { useContext } from 'react'
 import styles  from '../styles/components/Store.module.css'
-import armors from '../JSON/armors.json';
 import { StoreProvider } from '../contexts/StoreContext'
 
 
