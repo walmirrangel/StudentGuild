@@ -1,0 +1,47 @@
+[
+    {
+      "type": "sword",
+      "description": "Cajado do novato",
+      "id": 1,
+      "image": "sword1.png",
+      "price":90,
+      "life":"",
+      "stamina":""
+    },
+    {
+      "type": "sword",
+      "description": "Cajado do grande mago",
+      "id": 2,
+      "image": "sword2.png",
+      "price":800,
+      "life":"",
+      "stamina":""
+    },
+    {
+      "type": "sword",
+      "description": "Espada do rei",
+      "id": 3,
+      "image": "sword3.png",
+      "price":1000,
+      "life":"",
+      "stamina":""
+    },
+    {
+      "type": "sword",
+      "description": "Espada do aventureiro",
+      "id": 4,
+      "image": "sword4.png",
+      "price":100,
+      "life":"5",
+      "stamina":""
+    },
+    {
+      "type": "sword",
+      "description": "Espada de gelo",
+      "id": 5,
+      "image": "sword5.png",
+      "price":600,
+      "life":"",
+      "stamina":""
+    }
+  ]

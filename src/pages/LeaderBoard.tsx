@@ -1,12 +1,12 @@
 import styles  from '../styles/components/LeaderBoard.module.css'
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 let count =0;
 
 var atualizar = false;
 export default function LeaderBoard() {
-    const [users, setUsers] = useState([{}])
+    const [users, setUsers] = useState([])
 
 
     const handleClick = () => {
@@ -16,6 +16,7 @@ export default function LeaderBoard() {
           .get(`/api/users/`)
           .then((response) => {
             setUsers(response.data.users);
+            console.log(response.data.users)
           })
     }
 

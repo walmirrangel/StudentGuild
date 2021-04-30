@@ -1,0 +1,56 @@
+
+.container {
+  
+    height: 15vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  
+    display: flex;
+    flex-direction: column;
+  }
+.homeContainer {
+    background-image:url("../../../public/assets/oldpaper.png");
+    background-repeat: round;
+    border-radius: 2px;
+    box-shadow: 0 0 60px rgba(77, 75, 75, 0.05);
+    padding: 1.3rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .homeSection {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.0rem;
+    align-content: center;
+}
+  
+.container section.homeSection {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2rem;
+    align-content: center;
+}
+
+
+/* configurações de tamanho mobile*/
+@media (max-width: 820px) {
+  .container {
+      max-width: 620px;
+  }
+  .container section {
+      grid-template-columns: 1fr;
+  }
+
+  .container section.homeSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+

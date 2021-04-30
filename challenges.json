@@ -8,7 +8,7 @@
   {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
   {"answerText": "Itamar Franco", "isCorrect": false}],
     "amount": 80,
-    "money":10,
+    "money":10000,
     "questionType":"options"
   },
   {

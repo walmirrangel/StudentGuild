@@ -1,0 +1,47 @@
+[
+    {
+      "type": "background",
+      "description": "Floresta",
+      "id": 1,
+      "image": "background1.png",
+      "price":200,
+      "life":"",
+      "stamina":""
+    },
+    {
+      "type": "background",
+      "description": "Praia",
+      "id": 2,
+      "image": "background2.png",
+      "price":200,
+      "life":"",
+      "stamina":""
+    },
+    {
+      "type": "background",
+      "description": "Forja",
+      "id": 3,
+      "image": "background3.png",
+      "price":200,
+      "life":"",
+      "stamina":""
+    },
+    {
+      "type": "background",
+      "description": "Nuvens",
+      "id": 4,
+      "image": "background4.png",
+      "price":200,
+      "life":"5",
+      "stamina":""
+    },
+    {
+      "type": "background",
+      "description": "Fundo do mar",
+      "id": 5,
+      "image": "background5.png",
+      "price":200,
+      "life":"",
+      "stamina":""
+    }
+  ]

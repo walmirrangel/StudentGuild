@@ -1,0 +1,47 @@
+[
+  {
+    "type": "armor",
+    "description": "Armadura do aprendiz",
+    "id": 1,
+    "image": "armor1.png",
+    "price":40,
+    "life":"",
+    "stamina":""
+  },
+  {
+    "type": "armor",
+    "description": "Armadura do grande mago",
+    "id": 2,
+    "image": "armor2.png",
+    "price":800,
+    "life":"",
+    "stamina":""
+  },
+  {
+    "type": "armor",
+    "description": "Armadura do gatuno",
+    "id": 3,
+    "image": "armor3.png",
+    "price":90,
+    "life":"",
+    "stamina":""
+  },
+  {
+    "type": "armor",
+    "description": "Armadura de couro",
+    "id": 4,
+    "image": "armor4.png",
+    "price":50,
+    "life":"5",
+    "stamina":""
+  },
+  {
+    "type": "armor",
+    "description": "Armadura do rei",
+    "id": 5,
+    "image": "armor5.png",
+    "price":1000,
+    "life":"",
+    "stamina":""
+  }
+]

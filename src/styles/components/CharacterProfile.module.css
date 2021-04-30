@@ -6,15 +6,6 @@
     border-radius: 3px;
 }
 
-.characterProfileContainer div > img {
-    width: 3rem;
-    height: 4rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1.1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-}
-
 .characterProfileContainer div {
     margin-left: 0.5rem;
 }
@@ -24,6 +15,9 @@
     height: 6.5rem;
     background-color: var(--gray-line);
     border-radius: 3px;
+    position: relative;
+  top: 0;
+  left: 0;
 }
 
 .characterProfileContainer div strong {
@@ -52,4 +46,53 @@
 .characterProfileContainer div p:last-child {
     margin-right: 7.3rem;
     margin-top: 0.2rem;
+}
+
+.backgroudImgSRC{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 5px;
+}
+
+.backgroudImgSRC[src*="background0"] {
+    display: none;
+}
+
+.player {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+}
+
+.armor {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+.armor[src*="armor0"] {
+    display: none;
+}
+
+.sword {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+
+.sword[src*="sword0"] {
+    display: none;
+}
+
+.helmet {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.helmet[src*="helmet0"] {
+    display: none;
 }

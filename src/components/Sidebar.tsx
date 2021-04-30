@@ -65,7 +65,7 @@ export function Sidebar() {
                             />
                         </button>
                     </Link>
-                    <Link href="/store">
+                    <Link href="/Store">
                         <button type="button" className={`${styles.btnPage} ${store}`} onClick={goStore}>
                             <Image
                               loader={goStoreimg}

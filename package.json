@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@types/react-notification-system": "^0.2.40",
     "@vercel/node": "^1.10.0",
     "axios": "^0.21.1",

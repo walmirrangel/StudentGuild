@@ -22,6 +22,7 @@ interface AnswerOptions {
 }
 
 interface ChallengesContextData {
+    username:string;
     nickname: string;
     level: number;
     currentExperience: number;
@@ -34,6 +35,12 @@ interface ChallengesContextData {
     answerChallenge: boolean;
     maxStamina: number;
     idStudyArea: string;
+    
+    armorEquiped: number;
+    swordrEquiped: number;
+    helmetEquiped: number;
+    backgroundEquiped: number;
+
     levelUP: () => void;
     startNewChallenge: () => void;
     wrongAnswer: () => void;
@@ -41,6 +48,7 @@ interface ChallengesContextData {
     closeLevelUpModal: () => void;
     endChallenge: () => void;
     closeLowLifeStaminaWindow: () => void;
+    equipItem: () => void;
 }
 
 interface ChallengesProviderProps {
@@ -59,9 +67,6 @@ export const ChallengesContext = createContext({} as ChallengesContextData);
 let countdowntimeout: NodeJS.Timeout;
 
 export function ChallengesProvider({ children, ...rest }: ChallengesProviderProps) {
-
-
-    
 
     /* configuração dos estados das barras e itens do jogo */
     const [username, setUsername] = useState(Cookies.get("username") ?? '');
@@ -90,6 +95,12 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
     /* configuração dos estados das barras e itens do jogo */
 
+    /*character profile */
+    const [armorEquiped, setArmorEquiped] = useState();
+    const [swordrEquiped, setSwordEquiped] = useState();
+    const [helmetEquiped, setHelmetEquiped] = useState();
+    const [backgroundEquiped, setbackgroundEquiped] = useState();
+
     useEffect(() => {
         if (loading) {
             axios
@@ -102,7 +113,10 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
                 setLevel(response.data.user.level || 1)
                 setCurrentLife(response.data.user.currentLife ?? 100)
                 setCurrentStamina(response.data.user.currentStamina ?? 100)
-                console.log(response);
+                setArmorEquiped(response.data.user.equipedArmor|| 0);
+                setSwordEquiped(response.data.user.equipedSword || 0)
+                setHelmetEquiped(response.data.user.equipedHelmet || 0)
+                setbackgroundEquiped(response.data.user.equipedBackground || 0)
               })
               .catch((e) => {
                 console.log('Erro ao buscar dados do user', e)
@@ -123,20 +137,26 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
                 })
               }
             }
-          }, [loading, level, currentExperience, currentLife, currentStamina, currentMoney, challengesCompleted])
+          }, [loading, 
+            level, 
+            currentExperience, 
+            currentLife, 
+            currentStamina, 
+            currentMoney, 
+            challengesCompleted,
+            armorEquiped, 
+            swordrEquiped, 
+            helmetEquiped, 
+            backgroundEquiped,
+            equipItem])
+    
+    function equipItem(){
+            setLoading(true)
+    }
 
     useEffect(() => {
         Notification.requestPermission();
     }, [])
-
-    // useEffect(() => {
-    //     Cookies.set('level', String(level));
-    //     Cookies.set('currentExperience', String(currentExperience));
-    //     Cookies.set('currentLife', String(currentLife));
-    //     Cookies.set('currentStamina', String(currentStamina));
-    //     Cookies.set('currentMoney', String(currentMoney));
-    //     Cookies.set('challengesCompleted', String(challengesCompleted));
-    // }, [level, currentExperience, currentLife, currentStamina, currentMoney, challengesCompleted])
 
     useEffect(() => {
         if(currentLife <= 0 && currentStamina <= 0){
@@ -235,7 +255,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
     return(
         <ChallengesContext.Provider 
-         value ={{nickname,
+         value ={{username,nickname,
             level, 
          currentExperience,
          experienceToNextLevel, 
@@ -247,13 +267,15 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
          answerChallenge,
          maxStamina,
          idStudyArea, 
+         armorEquiped, swordrEquiped, helmetEquiped, backgroundEquiped,
          levelUP, 
          startNewChallenge, 
          wrongAnswer, 
          correctAnswer,
          closeLevelUpModal,
          endChallenge,
-         closeLowLifeStaminaWindow,}}>
+         closeLowLifeStaminaWindow,
+         equipItem,}}>
             {children}
             {isLevelUpModalOpen && <LevelUpModal />}
             {isLowLifeStaminaWindowOpen && <LowLifeStaminaWindow />}

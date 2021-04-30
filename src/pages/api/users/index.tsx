@@ -35,6 +35,14 @@ export default async function (request: VercelRequest, response: VercelResponse)
           currentStamina,
           currentMoney,
           challengesCompleted,
+          inventoryArmor,
+          inventorySword,
+          inventoryHelmet,
+          inventoryBackground,
+          equipedArmor,
+          equipedSword,
+          equipedHelmet,
+          equipedBackground,
         } = request.body
 
         const db = await connectToDatabase(process.env.MONGODB_URI)
@@ -70,6 +78,14 @@ export default async function (request: VercelRequest, response: VercelResponse)
             currentStamina,
             currentMoney,
             challengesCompleted,
+            inventoryArmor:[],
+            inventorySword:[],
+            inventoryHelmet:[],
+            inventoryBackground:[],
+            equipedArmor,
+            equipedSword,
+            equipedHelmet,
+            equipedBackground,
           })
         }
         return response.status(201).json({ success: true })
