@@ -1,4 +1,4 @@
-import styles  from '../styles/components/LeaderBoard.module.css'
+import styles  from '../styles/components/Leaderboard.module.css'
 import axios from 'axios'
 import { useState } from 'react'
 
