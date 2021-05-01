@@ -68,7 +68,7 @@ export default function Cadastro() {
                         <p>Senha</p>
                         <input type="password" name="password" onChange={e => setPassword(e.target.value)} id="pwd" value={password} placeholder="Senha"/>
                         <p>Game Name</p>
-                        <input type="text" name="gamename" id="game-name" onChange={e => setGamenamee(e.target.value)} value={gamename} placeholder="Nome do avatar" maxLength={Number(19)}/>
+                        <input type="text" name="gamename" id="game-name" onChange={e => setGamenamee(e.target.value)} value={gamename} placeholder="Nome do avatar" maxLength={Number(13)}/>
                         <a href="/">Volte para o Login</a>
                         
                         <button type="submit" className={styles.btnSubmit}>Cadastro</button>

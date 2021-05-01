@@ -2,6 +2,7 @@ import '../styles/global.css';
 
 import { SidebarProvider } from '../contexts/SidebarContext';
 import { Sidebar } from '../components/Sidebar';
+import { FloatingActionButton } from '../components/FloatingActionButton';
 
 function MyApp({ Component, pageProps }) {
 
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <SidebarProvider>
       <Component {...pageProps} />
       <Sidebar />
+      <FloatingActionButton />
     </SidebarProvider>
   ) 
 }

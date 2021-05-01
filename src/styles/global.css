@@ -53,4 +53,19 @@ a {
     --blue-twitter: #2AA9E0;
     --yellow: #ecde58;
     --background-character: #9b72ec;
+
+     /* Floating Action Button */
+  --FAB-light : #5f6bed;
+  --FAB       : #5965E0;
+  --FAB-dark  : #4953b8;
+
+  --mini-FAB-light : #4F58C4;
+  --mini-FAB       : #4953b8;
+  --mini-FAB-dark  : #3F479E;
+
+   /* MATERIAL DESIGN float action button sizes */
+   --regular-size   : 50px;
+   --mini-fab-size  : 40px;
+   --side-placement : 16px;
+   --plus-size      : 16px; /*24px*/
 }

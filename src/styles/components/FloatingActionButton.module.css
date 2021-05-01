@@ -1,0 +1,141 @@
+/* FloatingActionButtonContainerMenu */
+.floatingActionButtonContainerMenu {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/* FloatActionButtonMenu */
+.floatingActionButtonMenu {
+    height: var(--regular-size);
+    width: var(--regular-size);
+    min-height: 36px;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+}
+
+
+
+/* FloatingActionButtonContainerItens */
+.floatingActionButtonContainerItens {
+    min-height: 36px;
+    min-width: 0;
+
+    background-color: transparent;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    
+}
+
+
+
+/* FloatActionButtonMenuItens */
+.FABChallenge{
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 4rem;
+    height: var(--regular-size);
+    width: var(--regular-size);
+    min-height: 36px;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+}
+.FABleaderboard{
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 8rem;
+    height: var(--regular-size);
+    width: var(--regular-size);
+    min-height: 36px;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+    
+}
+.FABstore{
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 12rem;
+    height: var(--regular-size);
+    width: var(--regular-size);
+    min-height: 36px;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+}
+.FABLogout{
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 22rem;
+    height: var(--regular-size);
+    width: var(--regular-size);
+    min-height: 36px;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10%;
+
+}
+
+
+
+/* Mobile (_FloatingActionButton) */
+@media (min-width: 601px) { /* 601px ↑ esconde o FAB */
+    .floatingActionButtonContainerMenu,
+    .floatingActionButtonContainerItens {
+        display: none;
+    }
+}

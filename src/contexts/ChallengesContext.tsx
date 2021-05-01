@@ -4,6 +4,8 @@ import challenges from '../../challenges.json';
 import { LevelUpModal } from '../components/LevelUpModal';
 
 import { LowLifeStaminaWindow } from '../components/LowLifeStaminaWindow';
+import { AproveitamentoModal } from '../components/Aproveitamento';
+
 import axios from 'axios';
 
 interface Challenge {
@@ -35,6 +37,8 @@ interface ChallengesContextData {
     answerChallenge: boolean;
     maxStamina: number;
     idStudyArea: string;
+
+    aproveitamento:number;
     
     armorEquiped: number;
     swordrEquiped: number;
@@ -48,6 +52,7 @@ interface ChallengesContextData {
     closeLevelUpModal: () => void;
     endChallenge: () => void;
     closeLowLifeStaminaWindow: () => void;
+    closeAproveitamento: () => void;
     equipItem: () => void;
 }
 
@@ -65,6 +70,9 @@ interface ChallengesProviderProps {
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
 let countdowntimeout: NodeJS.Timeout;
+
+let respostasCorretas = 0;
+let respostasErradas = 0;
 
 export function ChallengesProvider({ children, ...rest }: ChallengesProviderProps) {
 
@@ -92,6 +100,9 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
     const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState (false);
     const [isLowLifeStaminaWindowOpen, setIsLowLifeStaminaWindowOpen] = useState (false);
+    const [isAproveitamentoOpen, setIsAproveitamentoOpen] = useState (false);
+
+    const [aproveitamento, setAproveitamento] = useState (0);
 
     /* configuração dos estados das barras e itens do jogo */
 
@@ -174,7 +185,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
             countdowntimeout = setTimeout(() => {
                 if (currentLife < 100) setCurrentLife(currentLife + 1);
                 if (currentStamina < maxStamina) setCurrentStamina(currentStamina + 1);
-            }, 1000)
+            }, 2000)
         }
     },[currentLife, currentStamina, activeChallenge])
 
@@ -198,6 +209,10 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
         setIsLowLifeStaminaWindowOpen(false);
     }
 
+    function closeAproveitamento() {
+        setIsAproveitamentoOpen(false);
+    }
+
     function startNewChallenge() {
         var randomChallengeIndex;
         do {
@@ -210,20 +225,19 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
 
         /* audio */
         new Audio('/notification.mp3').play();
-
-        /* permissao para notificação */
-       /* if (Notification.permission === 'granted') {
-            new Notification('Boa sorte 🙋', {
-                body: `Valendo ${challenge.amount}xp!`
-            })
-        }*/
     }
 
     function endChallenge() {
         setActiveChallenge(null);
+        var aproveitamento = Math.round((respostasCorretas * 100) / (respostasCorretas + respostasErradas));
+        setAproveitamento(aproveitamento);
+        setIsAproveitamentoOpen(true);
+        respostasErradas = 0;
+        respostasCorretas = 0;
     }
 
     function wrongAnswer() {
+        respostasErradas = respostasErradas + 1;
         setCurrentLife(currentLife - 10);
         setCurrentStamina(currentStamina - 10);
         setActiveChallenge(null);
@@ -244,7 +258,7 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
             finalExperience = finalExperience - experienceToNextLevel;
             levelUP();
         }
-
+        respostasCorretas = respostasCorretas + 1;
         setCurrentExperience(finalExperience);
         setCurrentMoney(finalMoney);
         setCurrentStamina(currentStamina - 5);
@@ -266,7 +280,8 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
          activeChallenge,
          answerChallenge,
          maxStamina,
-         idStudyArea, 
+         idStudyArea,
+         aproveitamento, 
          armorEquiped, swordrEquiped, helmetEquiped, backgroundEquiped,
          levelUP, 
          startNewChallenge, 
@@ -275,10 +290,12 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
          closeLevelUpModal,
          endChallenge,
          closeLowLifeStaminaWindow,
+         closeAproveitamento,
          equipItem,}}>
             {children}
             {isLevelUpModalOpen && <LevelUpModal />}
             {isLowLifeStaminaWindowOpen && <LowLifeStaminaWindow />}
+            {isAproveitamentoOpen && <AproveitamentoModal />}
         </ChallengesContext.Provider>
       ) 
 }

@@ -57,7 +57,7 @@ button.btnPage {
   border: 0;
   border-left: solid 5px transparent;
 
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
 }
 button.btnPage:hover {
   border-left: 5px solid #c0c0c0;
