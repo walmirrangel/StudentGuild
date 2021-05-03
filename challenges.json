@@ -7,8 +7,8 @@
   {"answerText": "Fernando Collor de Melo", "isCorrect": true},
   {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
   {"answerText": "Itamar Franco", "isCorrect": false}],
-    "amount": 80,
-    "money":10000,
+    "amount": 20,
+    "money":20,
     "questionType":"options"
   },
   {
@@ -31,68 +31,1052 @@
   {"answerText": "/questionsImages/RetratoModigliani.jpg", "isCorrect": false},
   {"answerText": "/questionsImages/RetratoPabloPicasso.jpg", "isCorrect": false},
   {"answerText": "/questionsImages/RetratoVanhGogh.jpg", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "historia",
+    "description": "A Cabanagem, revolta popular e social ocorrida durante o Império do Brasil, foi influenciada pela:.",
+  "answerOptions": [
+  {"answerText": "Revolução Francesa", "isCorrect": true},
+  {"answerText": "Revolução Russa", "isCorrect": false},
+  {"answerText": "Revolução Italiana", "isCorrect": false},
+  {"answerText": "Revolução Chinesa", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "historia",
+    "description": "Quando foi firmado o Tratado de Tordesilhas? Preencha como dia/mês",
+  "answerOptions": [
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "07/06", "isCorrect": true, "hidden": false},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "historia",
+    "description": "O principal imperador bizantino foi:",
+  "answerOptions": [
+  {"answerText": "/questionsImages/Justiano.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/Constantino.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Hamurabi.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Bizancio.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "historia",
+    "description": "Nome de nossa terra atribuído por algumas tribos indígenas, no período anterior à chegada dos portugueses ao Brasil:",
+  "answerOptions": [
+  {"answerText": "Terra do Pau Brasil", "isCorrect": false},
+  {"answerText": "Terra dos Papagaios", "isCorrect": false},
+  {"answerText": "Pindorama", "isCorrect": true},
+  {"answerText": "Terra de Santa Cruz", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "historia",
+    "description": "Por quantos anos durou a Guerra do Paraguai?",
+  "answerOptions": [
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "5", "isCorrect": true, "hidden": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "historia",
+    "description": "O filósofo alemão Friedrich Nietzsche(1844-1900), talvez o pensador moderno mais incômodo e provocativo, influenciou várias gerações e movimentos artísticos. O Expressionismo, que teve forte influência desse filósofo, contribuiu para o pensamento contrário ao racionalismo moderno e ao trabalho mecânico, através do embate entre a razão e a fantasia. As obras desse movimento deixam de priorizar o padrão de beleza tradicional para enfocar a instabilidade da vida, marcada por angústia, dor, inadequação do artista diante da realidade. Das obras a seguir, a que reflete esse enfoque artístico é",
+  "answerOptions": [
+  {"answerText": "/questionsImages/Idoso.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Menino.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/OGrito.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/Abaporu.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "historia",
+    "description": "Qual o nome do processo em que o corpo dos faraós era submetido após a morte?",
+  "answerOptions": [
+  {"answerText": "Cremação", "isCorrect": false},
+  {"answerText": "Mumificação", "isCorrect": true},
+  {"answerText": "Sepultamento", "isCorrect": false},
+  {"answerText": "Enterro", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "historia",
+    "description": " Antes de receber o nome de Brasil, nosso país teve quantos nomes?",
+  "answerOptions": [
+  {"answerText": "8", "isCorrect": true, "hidden": false},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "historia",
+    "description": "(Mackenzie) 'Conta a história que, com a ajuda de Atena, Epeu construiu um grande cavalo de madeira, onde escondeu guerreiros. Ulisses ardilosamente introduziu-o em Troia para que os guerreiros a saqueassem.' Em sua obra, o autor transformou a luta pelo controle do estreito de Dardanelos (Helesponto) num conflito envolvendo deuses e heróis. Quem é respectivo autor são:",
+  "answerOptions": [
+  {"answerText": "/questionsImages/Ésquilo.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Platão.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Sófocles.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Homero.jpg", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "historia",
+    "description": "O Código de Hamurabi foi criado pelo rei da:",
+  "answerOptions": [
+  {"answerText": "Pérsia", "isCorrect": false},
+  {"answerText": "Grécia", "isCorrect": false},
+  {"answerText": "Babilônia", "isCorrect": true},
+  {"answerText": "Constantinopla", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "historia",
+    "description": "Em que ano teve inicio a monarquia no Brasil?",
+  "answerOptions": [
+  {"answerText": "18", "isCorrect": true, "hidden": false},
+  {"answerText": "22", "isCorrect": true, "hidden": false},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "historia",
+    "description": "'Movimento de trabalhadores que se uniram e revoltaram-se contra as máquinas no princípio da Revolução Industrial. Sua ação consistia em invadir uma indústria têxtil e promover a destruição das máquinas que produziam as mercadorias'. O trecho acima descreve o movimento:",
+  "answerOptions": [
+  {"answerText": "/questionsImages/Anarquista.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Ludismo.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/Comunismo.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Socialismo.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "matematica",
+    "description": "O que significa um quinquênio?",
+  "answerOptions": [
+  {"answerText": "conjunto de 5 elementos", "isCorrect": false },
+  {"answerText": "figura de 5 lados", "isCorrect": false},
+  {"answerText": "período de 5 anos", "isCorrect": true},
+  {"answerText": "equação com 5 termos", "isCorrect": false}],
+    "amount": 80,
+    "money":10,
+    "questionType":"options"
+  },
+  {
+    "type": "matematica",
+    "description": "Uma tonelada corresponde a: [ex:10L, 20M..].",
+  "answerOptions": [
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "1000K", "isCorrect": true, "hidden": false},
+  {"answerText": "", "isCorrect": false, "hidden": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "matematica",
+    "description": "(Cefet/RJ - 2017) Um quadrado de lado x e um triângulo equilátero de lado y possuem áreas de mesma medida. Assim, pode-se afirmar que a razão x/y é igual a:",
+  "answerOptions": [
+  {"answerText": "/questionsImages/Matematica1.jpg", "isCorrect": false },
+  {"answerText": "/questionsImages/Matematica2.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Matematica3.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Matematica4.jpg", "isCorrect": true}],
     "amount": 80,
     "money":10,
     "questionType":"images"
   },
   {
     "type": "matematica",
-    "description": "Questão.",
+    "description": "O que é o diâmetro?",
   "answerOptions": [
-  {"answerText": "Ernesto Geisel", "isCorrect": false},
-  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
-  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
-  {"answerText": "Itamar Franco", "isCorrect": true}],
+  {"answerText": "o mesmo que metro quadrado", "isCorrect": false},
+  {"answerText": "medida da diagonal de um retângulo", "isCorrect": false},
+  {"answerText": "segmento de reta que passa pelo centro e que une dois pontos da circunferência do círculo", "isCorrect": true},
+  {"answerText": "medida equivalente à metade do raio de uma circunferência", "isCorrect": false}],
     "amount": 20,
     "money":20,
     "questionType":"options"
   },
   {
-    "type": "quimica",
-    "description": "Questão",
+    "type": "matematica",
+    "description": "Qual o valor de X na Equação X^2 - 49 = 0",
   "answerOptions": [
-  {"answerText": "Ernesto Geisel", "isCorrect": false},
-  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
-  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
-  {"answerText": "Itamar Franco", "isCorrect": true}],
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "7", "isCorrect": true, "hidden": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "matematica",
+    "description": "(Enem/2016) O tênis é um esporte em que a estratégia de jogo a ser adotada depende, entre outros fatores, de o adversário ser canhoto ou destro. Um clube tem um grupo de 10 tenistas, sendo que 4 são canhotos e 6 são destros. O técnico do clube deseja realizar uma partida de exibição entre dois desses jogadores, porém, não poderão ser ambos canhotos. Qual o número de possibilidades de escolha dos tenistas para a partida de exibição?",
+  "answerOptions": [
+  {"answerText": "/questionsImages/Mat2.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Mat1.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/Mat4.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/Mat3.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "matematica",
+    "description": "O que é um binômio?",
+  "answerOptions": [
+  {"answerText": "é uma pessoa que tem dois nomes", "isCorrect": false},
+  {"answerText": "uma operação envolvendo dois números", "isCorrect": false},
+  {"answerText": "um polinômio constituído por dois monômios", "isCorrect": true},
+  {"answerText": "são dois números consecutivos", "isCorrect": false}],
     "amount": 20,
     "money":20,
     "questionType":"options"
   },
   {
-    "type": "fisica",
-    "description": "Questão",
+    "type": "matematica",
+    "description": "ax^2+bx-C=0. Este é o formato de uma Equação do Segundo Grau. Essa informação é V ou F? ",
   "answerOptions": [
-  {"answerText": "Ernesto Geisel", "isCorrect": false},
-  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
-  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
-  {"answerText": "Itamar Franco", "isCorrect": true}],
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "V", "isCorrect": true, "hidden": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "matematica",
+    "description": "Que numero corresponde a seqüência a seguir: 1, 4, 9, 16...",
+  "answerOptions": [
+  {"answerText": "/questionsImages/2.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/5.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/18.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/25.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "matematica",
+    "description": " Algarismos são símbolos utilizados para...",
+  "answerOptions": [
+  {"answerText": "identificar as letras do alfabeto", "isCorrect": false},
+  {"answerText": "representar figuras geométricas", "isCorrect": false},
+  {"answerText": "escrever o nome das pessoas", "isCorrect": false},
+  {"answerText": "representação de números", "isCorrect": true}],
     "amount": 20,
     "money":20,
     "questionType":"options"
+  },
+  {
+    "type": "matematica",
+    "description": "As raízes da Equação X^2-10X+24=0 são:",
+  "answerOptions": [
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "6", "isCorrect": false, "hidden": false},
+  {"answerText": "4", "isCorrect": true, "hidden": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "matematica",
+    "description": "(Enem/2016) Para cadastrar-se em um site, uma pessoa precisa escolher uma senha composta por quatro caracteres, sendo dois algarismos e duas letras (maiúsculas ou minúsculas). As letras e os algarismos podem estar em qualquer posição. Essa pessoa sabe que o alfabeto é composto por vinte e seis letras e que uma letra maiúscula difere da minúscula em uma senha. O número total de senhas possíveis para o cadastramento nesse site é dado por",
+  "answerOptions": [
+  {"answerText": "/questionsImages/T4.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/T2.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/T3.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/T1.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
+  },
+  {
+    "type": "matematica",
+    "description": "O que é ábaco?",
+  "answerOptions": [
+  {"answerText": "uma caixa para guardar dominós", "isCorrect": false},
+  {"answerText": "uma equação matemática", "isCorrect": false},
+  {"answerText": "um tipo de réguao", "isCorrect": false},
+  {"answerText": "antigo instrumento de cálculo", "isCorrect": true}],
+    "amount": 20,
+    "money":20,
+    "questionType":"options"
+  },
+  {
+    "type": "matematica",
+    "description": "As raízes da Equação X^2-14x+48=0 são:",
+  "answerOptions": [
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "", "isCorrect": false, "hidden": true},
+  {"answerText": "8", "isCorrect": false, "hidden": false},
+  {"answerText": "6", "isCorrect": true, "hidden": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"inputAnswer"
+  },
+  {
+    "type": "matematica",
+    "description": "(Cefet/MG - 2017) Em um triângulo retângulo, a tangente de um de seus ângulos agudos é 2. Sabendo-se que a hipotenusa desse triângulo é 5, o valor do seno desse mesmo ângulo é",
+  "answerOptions": [
+  {"answerText": "/questionsImages/M1.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/M4.jpg", "isCorrect": true},
+  {"answerText": "/questionsImages/M3.jpg", "isCorrect": false},
+  {"answerText": "/questionsImages/M2.jpg", "isCorrect": false}],
+    "amount": 20,
+    "money":20,
+    "questionType":"images"
   },
   {
     "type": "portugues",
-    "description": "Questão",
-  "answerOptions": [
-  {"answerText": "Ernesto Geisel", "isCorrect": false},
-  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
-  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
-  {"answerText": "Itamar Franco", "isCorrect": true}],
-    "amount": 20,
-    "money":20,
-    "questionType":"options"
-  },
-  {
-    "type": "geografia",
-    "description": "Questão",
-  "answerOptions": [
-  {"answerText": "Ernesto Geisel", "isCorrect": false},
-  {"answerText": "Fernando Collor de Melo", "isCorrect": false},
-  {"answerText": "Fernando Henrique Cardoso", "isCorrect": false},
-  {"answerText": "Itamar Franco", "isCorrect": true}],
-    "amount": 20,
-    "money":20,
-    "questionType":"options"
-  }
+      "description": "Uma pessoa que tem lisura é aquela que...",
+    "answerOptions": [
+    {"answerText": "escorrega facilmente", "isCorrect": false},
+    {"answerText": "trabalha em um salão de beleza", "isCorrect": false},
+    {"answerText": "é íntegra, honesta", "isCorrect": true},
+    {"answerText": "é teimosa, insistente", "isCorrect": false}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "Identifique os pronomes na seguinte frase: Amigo, algum livro da minha coleção está contigo?",
+    "answerOptions": [
+    {"answerText": "Algum", "isCorrect": true, "hidden": false},
+    {"answerText": "Minha", "isCorrect": true, "hidden": false},
+    {"answerText": "Contigo", "isCorrect": true, "hidden": false},
+    {"answerText": "","isCorrect": false, "hidden": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"inputAnswer"
+    },
+    {
+      "type": "portugues",
+      "description": "Quais desses países, além do Brasil, também falam em português?",
+    "answerOptions": [
+    {"answerText": "/questionsImages/Italia.jpg", "isCorrect": false},
+    {"answerText": "/questionsImages/Alemanha.jpg", "isCorrect": false},
+    {"answerText": "/questionsImages/CaboVerde.jpg", "isCorrect": true},
+    {"answerText": "/questionsImages/Hungria.jpg", "isCorrect": false}],
+      "amount": 20,
+      "money":20,
+      "questionType":"images"
+    },
+    {
+      "type": "portugues",
+      "description": "Em termos de alimentação, uma pessoa frugal é aquela que...",
+    "answerOptions": [
+    {"answerText": " se alimenta apenas de carnes brancas", "isCorrect": false},
+    {"answerText": "come churrasco todas as semanas", "isCorrect": false},
+    {"answerText": "come apenas vegetais", "isCorrect": false},
+    {"answerText": "se alimenta com moderação", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "Convocado para a _____________ extraordinária, não hesitou em desmarcar os compromissos da semana. Ao almoço, pegou no jornal para ler a _____________ dos esportes e, assim, tentar relaxar um pouco antes de tratar do contrato de _____________ de quotas, que estava quase terminado.",
+    "answerOptions": [
+    {"answerText": "Sessão", "isCorrect": true, "hidden": false},
+    {"answerText": "Seção", "isCorrect": true, "hidden": false},
+    {"answerText": "Cessão", "isCorrect": true, "hidden": false},
+    {"answerText": "", "isCorrect": false, "hidden": false}],
+      "amount": 20,
+      "money":20,
+      "questionType":"inputAnswer"
+    },
+    {
+      "type": "portugues",
+      "description": "(Mackenzie) A colocação do pronome oblíquo está incorreta em:",
+    "answerOptions": [
+    {"answerText": "Para não aborrecê-lo, tive de sair.", "isCorrect": false},
+    {"answerText": "Ele me olhou algum tempo comovido.", "isCorrect": false},
+    {"answerText": "Não me submeterei aos seus caprichos.", "isCorrect": false},
+    {"answerText": "Quando sentiu-se em dificuldade, pediu ajuda.", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "Alentar é o mesmo que...",
+    "answerOptions": [
+    {"answerText": "reduzir, diminuir", "isCorrect": false},
+    {"answerText": "andar, caminhar", "isCorrect": false},
+    {"answerText": "cessar, parar", "isCorrect": false},
+    {"answerText": "animar, encorajar", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "A conjunção subordinada adverbial como, tem valor causal quando está sempre __________ à oração principal.",
+    "answerOptions": [
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "anteposto", "isCorrect": true, "hidden": false}],
+      "amount": 20,
+      "money":20,
+      "questionType":"inputAnswer"
+    },
+    {
+      "type": "portugues",
+      "description": "Indique as alternativas que apresentam a figura de linguagem personificação, também chamada de prosopopeia.",
+    "answerOptions": [
+    {"answerText": "as pedras humilham", "isCorrect": true},
+    {"answerText": "os confetes festejam", "isCorrect": true},
+    {"answerText": "os diários contam segredos", "isCorrect": true},
+    {"answerText": "os copos celebram as alegrias", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": " Uma pessoa cosmopolita é aquela que...",
+    "answerOptions": [
+    {"answerText": "estuda o universo", "isCorrect": false},
+    {"answerText": "cultiva plantas aquáticas", "isCorrect": false},
+    {"answerText": "estuda os extraterrestres", "isCorrect": false},
+    {"answerText": "viaja com frequência para muitos países", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "Doente de amor procurei remédio na vida noturna Como uma flor da noite em uma boate aqui na zona sul. A conjunção como, tem valor",
+    "answerOptions": [
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "comparativo", "isCorrect": true, "hidden": false}],
+      "amount": 20, 
+      "money":20,
+      "questionType":"inputAnswer"
+    },
+    {
+      "type": "portugues",
+      "description": "(Cesgranrio) Assinale a frase em que à ou às está mal empregado.",
+    "answerOptions": [
+    {"answerText": "Amores à vista.", "isCorrect": false},
+    {"answerText": "Estava meu coração à mercê das paixões.", "isCorrect": false},
+    {"answerText": "Desobedeci às limitações sentimentais.", "isCorrect": false},
+    {"answerText": "Submeteram o amor à provações difíceis.", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "Qual das palavras abaixo é um adjetivo?",
+    "answerOptions": [
+    {"answerText": "galeto", "isCorrect": false},
+    {"answerText": "garçom", "isCorrect": false},
+    {"answerText": "geada", "isCorrect": false},
+    {"answerText": "gordo", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "portugues",
+      "description": "Qual é a figura de linguagem presente na expressão'Adoro quando as pessoas que gosto me ignoram...'",
+    "answerOptions": [
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "", "isCorrect": false, "hidden": true},
+    {"answerText": "", "isCorrect": false, "hidden": true} ,
+    {"answerText": "Ironia", "isCorrect": true, "hidden": false}],
+      "amount": 20,
+      "money":20,
+      "questionType":"inputAnswer"
+    },
+    {
+      "type": "portugues",
+      "description": "(CESCEM–SP) Já ___ anos, ___ neste local árvores e flores. Hoje, só ___ ervas daninhas.",
+    "answerOptions": [
+    {"answerText": "fazem, havia, existe", "isCorrect": false},
+    {"answerText": "fazem, havia, existe", "isCorrect": false},
+    {"answerText": "fazem, haviam, existem", "isCorrect": false},
+    {"answerText": "faz, havia, existem", "isCorrect": true}],
+      "amount": 20,
+      "money":20,
+      "questionType":"options"
+    },
+    {
+      "type": "quimica",
+        "description": "Desde a antiguidade, a humanidade tenta entender do que a matéria é feita. O primeiro a pensar sobre isso foi um filósofo grego, em 450 anos antes de Cristo. Qual o nome desse filósofo?",
+      "answerOptions": [
+      {"answerText": "René Descartes", "isCorrect": false},
+      {"answerText": "Aristóteles", "isCorrect": false},
+      {"answerText": "Sócrates", "isCorrect": false},
+      {"answerText": "Demócrito", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "quimica",
+        "description": "Um íon de carga 1+ possui 26 elétrons. O seu número de nêutrons é cinco unidades menor que o número de prótons. Qual é o seu número de massa?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "49", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "quimica",
+        "description": "(Unifor) O 2-metilpent-2-eno tem fórmula molecular:",
+      "answerOptions": [
+      {"answerText": "/questionsImages/Quimica1.jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/Quimica3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Quimica2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Quimica4.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "quimica",
+        "description": "Os modelos comparados a um pudim de passas, a uma bola de bilhar e ao Sistema Solar foram elaborados, respectivamente, por quais cientistas?",
+      "answerOptions": [
+      {"answerText": "Dalton, Thomson e Rutherford", "isCorrect": false},
+      {"answerText": "Rutherford, Thomson e Dalton", "isCorrect": false},
+      {"answerText": "Rutherford, Dalton e Thomson", "isCorrect": false},
+      {"answerText": "Thomson, Dalton e Rutherford", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "quimica",
+        "description": "O átomo X é isótono do Ouro (representado por Au). O elemento químico 'Ouro' tem número de massa igual a 196 e tem número atômico igual a 79. Sabendo que o elemento X tem 57 prótons, qual é a sua massa?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "174", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "quimica",
+        "description": "(UFPB) A estrutura do composto orgânico de fórmula molecular C5H8O que apresenta cadeia ramificada, insaturada, heterogênea e alicíclica é:",
+      "answerOptions": [
+      {"answerText": "/questionsImages/Qui1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Qui4;jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/Qui3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Qui2.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "quimica",
+        "description": "Assinale a alternativa incorreta correspondente aos modelos atômicos.",
+      "answerOptions": [
+      {"answerText": "O próton foi descoberto no modelo de Rutherford", "isCorrect": false},
+      {"answerText": "O elétron foi descoberto no modelo de Thomson.", "isCorrect": false},
+      {"answerText": "No modelo de Rutherford, o modelo do átomo é divisível.", "isCorrect": false},
+      {"answerText": "No modelo de Dalton, o átomo se tornou divisível.", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "quimica",
+        "description": "O ânion Enxofre 4- (representado por S), tem número de massa igual a 32 e número atômico igual a 16. Qual é o número de elétrons e prótons, respectivamente?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "20", "isCorrect": false, "hidden": false},
+      {"answerText": "16", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "quimica",
+        "description": "(PUC-PR) Em 100 gramas de alumínio, quantos átomos deste elemento estão presentes? Dados: M(Al) = 27 g/mol 1 mol = 6,02 x 1023 átomos .",
+      "answerOptions": [
+      {"answerText": "/questionsImages/Q1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Q2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Q4.jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/Q3.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "quimica",
+        "description": "Qual foi o físico que com base em experimentos radioativos provou a existência do Próton?",
+      "answerOptions": [
+      {"answerText": "Bohr, que também provou a existência da primeira partícula nuclear.", "isCorrect": false},
+      {"answerText": "Thomson, que também provou a existência do Nêutron.", "isCorrect": false},
+      {"answerText": "Dalton, assim como provou que átomos iguais possui a mesma massa.", "isCorrect": false},
+      {"answerText": "Rutherford, assim como provou que a matéria é descontínua.", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "quimica",
+        "description": "Atualmente, quantos elementos químicos a tabela periódica possui?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "118", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "quimica",
+        "description": "(PUC-MG) Ao se colocarem hexano (d = 0,66 g/cm3), água (d = 1 g/cm3) e sal (NaCl) em uma vidraria de laboratório conhecida como funil de separação (figura a seguir), assinale o aspecto adequado observado após algum tempo de repouso.",
+      "answerOptions": [
+      {"answerText": "/questionsImages/QQ1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/QQ2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/QQ4.jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/QQ3.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "quimica",
+        "description": "Rutherford determinou, pela primeira vez, com base em experimentos com materiais radioativos, a que a matéria é descontínua. Qual é uma das contribuições reconhecidas de Rutherford ao",
+      "answerOptions": [
+      {"answerText": "a existência de uma partícula atômica positiva.", "isCorrect": false},
+      {"answerText": "a presença de camadas na eletrosfera.", "isCorrect": false},
+      {"answerText": "a natureza elétrica.", "isCorrect": false},
+      {"answerText": "a existência de uma partícula atômica negativa.", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "quimica",
+        "description": "Um cátion (+) bivalente Y apresenta 40 como número de massa e 28 como número de elétrons. Qual o número atômico do átomo Y?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "30", "isCorrect": true, "hidden": false}],
+        "amount": 20, 
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "quimica",
+        "description": "O peróxido de hidrogênio é um composto químico que pode se decompor, formando água e oxigênio, conforme a equação química a seguir. A respeito dessa reação a equação corretamente balanceada é:",
+      "answerOptions": [
+      {"answerText": "/questionsImages/QQQ1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/QQQ2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/QQQ3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/QQQ4.jpg", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "fisica",
+        "description": "Qual é a definição de Temperatura?",
+      "answerOptions": [
+      {"answerText": "É a unidade de medida presente em termômetros, cronômetros e réguas", "isCorrect": false},
+      {"answerText": "Grandeza escalar que define o estado de calor de um corpo", "isCorrect": false},
+      {"answerText": "Grandeza vetorial que define o estado térmico de um corpo.", "isCorrect": false},
+      {"answerText": "Grandeza escalar que define o estado térmico de um corpo ou sistema de corpos.", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "fisica",
+        "description": "Qual é o valor exato da gravidade terrestre?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "9,807", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "fisica",
+        "description": "(PUC/SP - 2018) Um objeto cúbico, maciço e homogêneo, de massa igual a 1500 g, está em repouso sobre uma superfície plana e horizontal. O coeficiente de atrito estático entre o objeto e a superfície é igual a 0,40. Uma força F, horizontal à superfície, é aplicada sobre o centro de massa desse objeto. Que gráfico melhor representa a intensidade da força de atrito estático Fatrito em função da intensidade F da força aplicada? Considere as forças envolvidas em unidades do SI.",
+      "answerOptions": [
+      {"answerText": "/questionsImages/Fisica1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Fisica2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Fisica3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Fisica4.jpg", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "fisica",
+        "description": "Qual é conceito de 'máquina'?",
+      "answerOptions": [
+      {"answerText": "É a maneira como um corpo realiza trabalho", "isCorrect": false},
+      {"answerText": "É exemplificada pelo motor de um carro", "isCorrect": false},
+      {"answerText": "É conceituada pela forma como se transforma a energia presente em um certo corpo.", "isCorrect": false},
+      {"answerText": "É qualquer corpo ou sistema de corpos que é capaz de transformar qualquer tipo de energia em energia mecânica.", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "fisica",
+        "description": "Um objeto possui massa de 5 kg e está em queda livre em um local onde a aceleração da gravidade é de 9,8 m/s². Qual a intensidade da força que o bloco exerce na Terra?",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "49N", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "fisica",
+        "description": "(Enem - 2016) Dois veículos que trafegam com velocidade constante em uma estrada, na mesma direção e sentido, devem manter entre si uma distância mínima. Isso porque o movimento de um veículo, até que ele pare totalmente, ocorre em duas etapas, a partir do momento em que o motorista detecta um problema que exige uma freada brusca. A primeira etapa é associada à distância que o veículo percorre entre o intervalo de tempo da detecção do problema e o acionamento dos freios. Já a segunda se relaciona com a distância que o automóvel percorre enquanto os freios agem com desaceleração constante. Considerando a situação descrita, qual esboço gráfico representa a velocidade do automóvel em relação à distância percorrida até parar totalmente?",
+      "answerOptions": [
+      {"answerText": "/questionsImages/Fisi4.jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/Fisi2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Fisi3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/Fisi1.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "fisica",
+        "description": "Qual é a terceira lei de Newton?",
+      "answerOptions": [
+      {"answerText": "Princípio fundamental da dinâmica", "isCorrect": false},
+      {"answerText": "Gravitação universal", "isCorrect": false},
+      {"answerText": "Inércia", "isCorrect": false},
+      {"answerText": "Ação e reação", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "fisica",
+        "description": "'Um corpo em repouso tende a permanecer em repouso, e um corpo em movimento tende a permanecer em movimento'. Essa situação se aplica ao princípio da ___.",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "Inércia", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "fisica",
+        "description": "A atração e a repulsão entre partículas carregadas têm inúmeras aplicações industriais, tal como a pintura eletrostática. As figuras abaixo mostram um mesmo conjunto de partículas carregadas, nos vértices de um quadrado de lado a, que exercem forças eletrostáticas sobre a carga A no centro desse quadrado. Na situação apresentada, o vetor que melhor representa a força resultante agindo sobre a carga A se encontra na figura",
+      "answerOptions": [
+      {"answerText": "/questionsImages/F1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/F4.jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/F3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/F2.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "fisica",
+        "description": "Qual é outro sinônimo de momento linear?",
+      "answerOptions": [
+      {"answerText": "Quantidade de luminosidade", "isCorrect": false},
+      {"answerText": "Quantidade de pressão", "isCorrect": false},
+      {"answerText": "Quantidade de velocidade", "isCorrect": false},
+      {"answerText": "Quantidade de movimento", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "fisica",
+        "description": "O _____ é um acessório fundamental dos submarinos, usados para captar imagens acima da água. Também teve largo uso em guerras, para observar movimento inimigo de dentro de trincheiras.",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "Periscópio", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "fisica",
+        "description": "Resistores ôhmicos idênticos foram associados em quatro circuitos distintos e submetidos à mesma tensão UA,B. Nessas condições, a corrente elétrica de menor intensidade se estabelece no seguinte circuito: ",
+      "answerOptions": [
+      {"answerText": "/questionsImages/FF1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/FF4.jpg", "isCorrect": true},
+      {"answerText": "/questionsImages/FF3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/FF2.jpg", "isCorrect": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "fisica",
+        "description": "Qual é a medida no S.I. de luminosidade?",
+      "answerOptions": [
+      {"answerText": "Claro e escuro", "isCorrect": false},
+      {"answerText": "Lúmen", "isCorrect": false},
+      {"answerText": "Watt", "isCorrect": false},
+      {"answerText": "Candela", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"options"
+      },
+      {
+        "type": "fisica",
+        "description": "(UEL-PR) Um corpo de massa m é submetido a uma força resultante de módulo F, adquirindo aceleração a. A força resultante que se deve aplicar a um corpo de massa m/2 para que ele adquira aceleração 4a deve ter módulo:",
+      "answerOptions": [
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "", "isCorrect": false, "hidden": true},
+      {"answerText": "2F", "isCorrect": true, "hidden": false}],
+        "amount": 20,
+        "money":20,
+        "questionType":"inputAnswer"
+      },
+      {
+        "type": "fisica",
+        "description": "(Mackenzie-SP) Joãozinho abandona do alto de uma torre um corpo a partir do repouso. Durante a queda livre, com g constante, ele observa que nos dois primeiros segundos o corpo percorre a distância D. A distância percorrida pelo corpo nos 4 s seguintes será:",
+      "answerOptions": [
+      {"answerText": "/questionsImages/FFF1.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/FFF2.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/FFF3.jpg", "isCorrect": false},
+      {"answerText": "/questionsImages/FFF4.jpg", "isCorrect": true}],
+        "amount": 20,
+        "money":20,
+        "questionType":"images"
+      },
+      {
+        "type": "geografia",
+          "description": "Quais são os dois tipos de energia maremotriz?",
+        "answerOptions": [
+        {"answerText": "Química e potencial", "isCorrect": false},
+        {"answerText": "Cinética e mecânica", "isCorrect": false},
+        {"answerText": "Potencial e mecânica", "isCorrect": false},
+        {"answerText": "Cinética e potencial", "isCorrect": true}],
+          "amount": 20,
+          "money":20,
+          "questionType":"options"
+        },
+        {
+          "type": "geografia",
+          "description": "O primeiro projeto de maremotriz fica na França. Quantos metros de comprimento tem a barragem?",
+        "answerOptions": [
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "710", "isCorrect": true, "hidden": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"inputAnswer"
+        },
+        {
+          "type": "geografia",
+          "description": "Escala, em cartografia, é a relação matemática entre as dimensões reais do objeto e a sua representação no mapa. Assim, em um mapa de escala 1:50.000, uma cidade que tem 4,5 Km de extensão entre seus extremos será representada com",
+        "answerOptions": [
+        {"answerText": "/questionsImages/Geografia1.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/Geografia2.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/Geografia3.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/Geografia4.jpg", "isCorrect": true}],
+          "amount": 20,
+          "money":20,
+          "questionType":"images"
+        },
+        {
+          "type": "geografia",
+          "description": "Em que domínios o fénomeno da globalização, tem implicado transformações?",
+        "answerOptions": [
+        {"answerText": "Económico, político, financeiro e cultural.", "isCorrect": false},
+        {"answerText": "Judicial, demográfico, institucional e social.", "isCorrect": false},
+        {"answerText": "Político, cultural, social, financeiro e ambiental", "isCorrect": false},
+        {"answerText": "Económico, financeiro, social e cultural.", "isCorrect": true}],
+          "amount": 20,
+          "money":20,
+          "questionType":"options"
+        },
+        {
+          "type": "geografia",
+          "description": "Para a captação da energia, o desnível das marés deve ser superior a quantos metros?",
+        "answerOptions": [
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "7", "isCorrect": true, "hidden": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"inputAnswer"
+        },
+        {
+          "type": "geografia",
+          "description": "Considerando que a distância real entre Yokohama e Fukushima, duas importantes localidades, onde serão realizadas competições dos Jogos Olímpicos de Verão 2020 é de 270 quilômetros, em um mapa, na escala de 1:1.500.000, essa distância seria de",
+        "answerOptions": [
+        {"answerText": "/questionsImages/Geo1.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/Geo2.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/Geo4.jpg", "isCorrect": true},
+        {"answerText": "/questionsImages/Geo3.jpg", "isCorrect": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"images"
+        },
+        {
+          "type": "geografia",
+          "description": "As empresas transnacionais, (ETN) têm contribuindo para...",
+        "answerOptions": [
+        {"answerText": "a diminuição do consumo de bens e serviços a nível global.", "isCorrect": false},
+        {"answerText": "a diminuição de bens de serviços, capitais, pessoas e informação.", "isCorrect": false},
+        {"answerText": "a diminuição da circulação de bens e serviços a nível global.", "isCorrect": false},
+        {"answerText": "o aumento da circulação de bens e serviços a nível global.", "isCorrect": true}],
+          "amount": 20,
+          "money":20,
+          "questionType":"options"
+        },
+        {
+          "type": "geografia",
+          "description": "As transformações culturais, como a modificação de atitudes e de representações sociais, consequentes da globalização corresponde ao processo de ___.",
+        "answerOptions": [
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "aculturação", "isCorrect": true, "hidden": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"inputAnswer"
+        },
+        {
+          "type": "geografia",
+          "description": "Escala gráfica, segundo Vesentini e Vlach (1996, p. 50), 'é aquela que expressa diretamente os valores da realidade mapeada num gráfico situado na parte inferior de um mapa'. Nesse sentido, considerando que a escala de um mapa está representada como 1:25000 e que duas cidades, A e B, nesse mapa, estão distantes, entre si, 5 cm, a distância real entre essas cidades é de:",
+        "answerOptions": [
+        {"answerText": "/questionsImages/G1.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/G4.jpg", "isCorrect": true},
+        {"answerText": "/questionsImages/G3.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/G2.jpg", "isCorrect": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"images"
+        },
+        {
+          "type": "geografia",
+          "description": "Qual é a principal consequência provocada pela uniformização dos padrões a nível mundial?",
+        "answerOptions": [
+        {"answerText": "as atitudes e hábitos tornam-se completamente diferentes em todo o mundo", "isCorrect": false},
+        {"answerText": "o afastamento das culturas do mundo", "isCorrect": false},
+        {"answerText": "os gostos e hábitos passam a ser iguais em todo o mundo", "isCorrect": false},
+        {"answerText": "a possível perda da identidade cultural dos países", "isCorrect": true}],
+          "amount": 20,
+          "money":20,
+          "questionType":"options"
+        },
+        {
+           "type": "geografia",
+          "description": "O granito e o quartzo são rochas ígneas. V ou F?",
+        "answerOptions": [
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "F", "isCorrect": true, "hidden": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"inputAnswer"
+        },
+        {
+          "type": "geografia",
+          "description": "Qual é a região brasileira possui o maior número de estados?",
+        "answerOptions": [
+        {"answerText": "/questionsImages/GG1.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/GG2.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/GG3.jpg", "isCorrect": true},
+        {"answerText": "/questionsImages/GG4.jpg", "isCorrect": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"images"
+        },
+        {
+          "type": "geografia",
+          "description": "Na geologia vemos que existe três modos de classificar a rocha quais são essas classificações?",
+        "answerOptions": [
+        {"answerText": "Sedimento, Pedra e gelo", "isCorrect": false},
+        {"answerText": "Ígnea, Metamórfica e plutônica", "isCorrect": false},
+        {"answerText": "Ígnea, Metamórfica e areia", "isCorrect": false},
+        {"answerText": "Ígnea, metamórfica e sedimentar", "isCorrect": true}],
+          "amount": 20,
+          "money":20,
+          "questionType":"options"
+        },
+        {
+          "type": "geografia",
+          "description": "Em que ano o NAFTA entrou em vigor?",
+        "answerOptions": [
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "", "isCorrect": false, "hidden": true},
+        {"answerText": "1994", "isCorrect": true, "hidden": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"inputAnswer"
+        },
+        {
+          "type": "geografia",
+          "description": "A maior parte da Floresta Amazônica está localizada na região:",
+        "answerOptions": [
+        {"answerText": "/questionsImages/GG1.jpg", "isCorrect": true},
+        {"answerText": "/questionsImages/GG3.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/GG2.jpg", "isCorrect": false},
+        {"answerText": "/questionsImages/GG4.jpg", "isCorrect": false}],
+          "amount": 20,
+          "money":20,
+          "questionType":"images"
+        }
 ]
