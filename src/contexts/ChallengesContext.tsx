@@ -54,6 +54,7 @@ interface ChallengesContextData {
     closeLowLifeStaminaWindow: () => void;
     closeAproveitamento: () => void;
     equipItem: () => void;
+    changeScreenEndChallenge: () => void;
 }
 
 interface ChallengesProviderProps {
@@ -236,6 +237,10 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
         respostasErradas = 0;
         respostasCorretas = 0;
     }
+
+    function changeScreenEndChallenge() {
+        setActiveChallenge(null);
+    }
     
 
     function wrongAnswer() {
@@ -293,7 +298,8 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
          endChallenge,
          closeLowLifeStaminaWindow,
          closeAproveitamento,
-         equipItem,}}>
+         equipItem,
+         changeScreenEndChallenge,}}>
             {children}
             {isLevelUpModalOpen && <LevelUpModal />}
             {isLowLifeStaminaWindowOpen && <LowLifeStaminaWindow />}

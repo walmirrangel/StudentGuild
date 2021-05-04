@@ -21,7 +21,7 @@ export const CountdownContext = createContext({} as CountdownContextData)
 let countdowntimeout: NodeJS.Timeout;
 
 export function CountdownProvider({children}){
-    const {answerChallenge, endChallenge, startNewChallenge} = useContext(ChallengesContext);
+    const {answerChallenge, endChallenge, startNewChallenge, changeScreenEndChallenge} = useContext(ChallengesContext);
 
     const [time, setTime] = useState(2 * 60);
     const [isActive, setisActive] = useState(false);
@@ -48,6 +48,16 @@ export function CountdownProvider({children}){
         endChallenge();
     }
 
+    function resetCountdownOnScreenChange() {
+        clearTimeout(countdowntimeout);
+        setisActive(false);
+        setTime(2 * 60);
+        setHasFinished(false);
+        
+        setStopCount(true);
+        changeScreenEndChallenge();
+    }
+
     useEffect(() => {
         if(isActive && time > 0) {
             if (stopCount){
@@ -67,7 +77,7 @@ export function CountdownProvider({children}){
 
     useEffect(() => {
         if(isActive){
-            resetCountdown();
+            resetCountdownOnScreenChange();
         }
     }, [goHome, goStore, goLeaderboard, goSobre])
 
