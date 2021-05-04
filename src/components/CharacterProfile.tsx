@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(1, 2, 2),
       [theme.breakpoints.down('md')]: {
         width: 420,
-        padding: theme.spacing(1, 7, 1, 0),
+        padding: theme.spacing(1, 6, 1, 8),
       },
     },
     price: {
