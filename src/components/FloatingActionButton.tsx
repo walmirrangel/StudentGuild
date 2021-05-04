@@ -8,7 +8,7 @@ import styles  from '../styles/components/FloatingActionButton.module.css'
 import Cookies from 'js-cookie'
 
 export function FloatingActionButton() {
-    const { activePage, goHome, goStore, goLeaderboard, Logout } = useContext(SidebarContext)
+    const { activePage, goHome, goStore, goLeaderboard, goSobre, Logout } = useContext(SidebarContext)
     const [ isChecked, setIsChecked ] = useState(false)
 
     const [ activeFAB, setActiveFAB ] = useState(false)
@@ -26,6 +26,7 @@ export function FloatingActionButton() {
 
     const Challenge       = activePage     === 'Challenge' ?       'activePageButton' : '' 
     const leaderboardPage = activePage     === 'leaderboard' ? 'activePageButton' : ''
+    const sobrePage = activePage     === 'sobre' ? 'activePageButton' : ''
     const store          = activePage     === 'store' ? 'activePageButton' : ''
     const LogoutPage      = activeFAB  === true ?   'activePageButton' : ''
     
@@ -33,11 +34,12 @@ export function FloatingActionButton() {
     const checked = isChecked ? 'FABchecked' : '' // - noFABchecked
     const enabled = isChecked ? 'FABenabled' : '' // - noFABenabled
 
-    const imgSize = 40
+    const imgSize = 45
     const logoLoaderImg = () => `./icons/shield.png`
     const homeLoaderImg = () => `./icons/logo-bar.png`
     const goStoreimg = () => `./icons/chest.png`
     const leaderboardLoaderImg = () => `./icons/leaderboard.png`
+    const sobreLoaderImg = () => `./icons/sobre.png`
     const Logoutimg = () => `./icons/logout2.png`
 
     return (
@@ -85,6 +87,17 @@ export function FloatingActionButton() {
                                     loader={leaderboardLoaderImg}
                                     src='./icons/leaderboard.png'
                                     alt="Ranking"
+                                    width={imgSize}
+                                    height={imgSize}
+                                />
+                            </button>
+                        </Link>
+                        <Link href="/Sobre">
+                            <button type="button" id='FABsobre' className={`${styles.FABsobre} ${leaderboardPage}`} onClick={goSobre} aria-label="Ir para Sobre">
+                                <Image
+                                    loader={sobreLoaderImg}
+                                    src='./icons/sobre.png'
+                                    alt="Sobre"
                                     width={imgSize}
                                     height={imgSize}
                                 />

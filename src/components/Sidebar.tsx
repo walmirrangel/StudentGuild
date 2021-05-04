@@ -8,7 +8,7 @@ import Cookies from 'js-cookie'
 
 export function Sidebar() {
     const { activePage } = useContext(SidebarContext)
-    const { goHome, goStore, goLeaderboard, Logout } = useContext(SidebarContext)
+    const { goHome, goStore, goLeaderboard, goSobre, Logout } = useContext(SidebarContext)
 
     const [ activeSidebar, setActiveSidebar ] = useState(false)
     
@@ -21,18 +21,20 @@ export function Sidebar() {
              .catch(err => console.log(err))
     
          return () => { mounted = false } // - Cleanup()
-     }, [ activeSidebar, activePage, goHome, goStore, goLeaderboard, Logout, [] ])
+     }, [ activeSidebar, activePage, goHome, goStore, goLeaderboard, goSobre, Logout, [] ])
 
     const Challenge       = activePage     === 'Challenge' ?       'activePage' : '' 
     const leaderboardPage = activePage     === 'leaderbord' ? 'activePage' : ''
+    const sobrePage = activePage     === 'sobre' ? 'activePage' : ''
     const store          = activePage     === 'store' ? 'activePage' : ''
     const LogoutPage      = activeSidebar  === true ?   'activePage' : '' 
 
-    const imgSize = 40
+    const imgSize = 65
     const logoLoaderImg = () => `./icons/shield.png`
     const homeLoaderImg = () => `./icons/logo-bar.png`
     const goStoreimg = () => `./icons/chest.png`
     const leaderboardLoaderImg = () => `./icons/leaderboard.png`
+    const sobreLoaderImg = () => `./icons/sobre.png`
     const Logoutimg = () => `./icons/logout2.png`
 
     
@@ -60,8 +62,8 @@ export function Sidebar() {
                               loader={homeLoaderImg}
                               src='./icons/logo-bar.png'
                               alt="Desafie-se"
-                              width={imgSize}
-                              height={imgSize}
+                              width='65'
+                              height='65'
                             />
                         </button>
                     </Link>
@@ -82,8 +84,19 @@ export function Sidebar() {
                               loader={leaderboardLoaderImg}
                               src='./icons/leaderboard.png'
                               alt="Ranking"
-                              width='45'
-                              height='45'
+                              width='65'
+                              height='65'
+                            />
+                        </button>
+                    </Link>
+                    <Link href="/Sobre">
+                        <button type="button" className={`${styles.btnPage} ${leaderboardPage}`} onClick={goSobre}>
+                            <Image
+                              loader={sobreLoaderImg}
+                              src='./icons/sobre.png'
+                              alt="Ranking"
+                              width='65'
+                              height='65'
                             />
                         </button>
                     </Link>

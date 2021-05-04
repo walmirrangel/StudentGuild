@@ -1,5 +1,6 @@
 import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { ChallengesContext } from '../contexts/ChallengesContext';
+import { SidebarContext } from "./SidebarContext";
 
 interface CountdownContextData {
     minutes: number;
@@ -26,6 +27,8 @@ export function CountdownProvider({children}){
     const [isActive, setisActive] = useState(false);
     const [hasFinished, setHasFinished] = useState(false);
     const [stopCount, setStopCount] = useState(answerChallenge);
+    
+  const {goHome} =useContext(SidebarContext);
 
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
@@ -61,6 +64,12 @@ export function CountdownProvider({children}){
             resetCountdown();
         }
     }, [isActive, time])
+
+    useEffect(() => {
+        if(isActive){
+            resetCountdown();
+        }
+    }, [goHome])
 
     return (
         <CountdownContext.Provider value={{minutes, seconds, hasFinished, isActive, startCountdown, resetCountdown,}}>

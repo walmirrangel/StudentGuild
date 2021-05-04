@@ -7,6 +7,7 @@ interface SidebarContextData {
     goHome: () => void
     goStore: () => void
     goLeaderboard: () => void
+    goSobre: () => void
     Logout: () => void
 }
 interface SidebarProviderProps {
@@ -33,6 +34,11 @@ export function SidebarProvider({ children }: SidebarProviderProps) {
         setActivePage('leaderboardPage')
         Cookies.set('activePage', 'leaderboardPage')
     }
+    function goSobre() {
+        sidebarON()
+        setActivePage('sobrePage')
+        Cookies.set('activePage', 'sobrePage')
+    }
     function Logout() {
         sidebarON()
         setActivePage('LogoutPage')
@@ -48,6 +54,7 @@ export function SidebarProvider({ children }: SidebarProviderProps) {
             goHome,
             goStore,
             goLeaderboard,
+            goSobre,
             Logout,
         }}>
             {children}

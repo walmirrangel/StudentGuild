@@ -9,11 +9,16 @@ import axios from 'axios';
 interface StoreProviderProps {
 }
 
-export const StoreContext = createContext({});
+interface StoreContextData {
+    compraRealizada: Number;
+}
+
+export const StoreContext = createContext({} as StoreContextData);
 
 
 export function StoreProvider({ ...rest }: StoreProviderProps) {
     const {currentMoney, username, equipItem} = useContext(ChallengesContext);
+    const [ compraRealizada, setCompraRealizada ] = useState(0)
     
 
     function EquipItem(type, id){
@@ -87,12 +92,13 @@ export function StoreProvider({ ...rest }: StoreProviderProps) {
             username,
             currentMoney:attMoney,
         })
+        setCompraRealizada(compraRealizada + 1);
         equipItem();
     }
 
     return(
         <StoreContext.Provider 
-         value ={{
+         value ={{ compraRealizada,
          }}>
             <section className={styles.homeSection} >
               <div>

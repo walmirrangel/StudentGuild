@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Inventory = props =>{
     const {username} = useContext(ChallengesContext);
+    const { compraRealizada } = useContext(StoreContext)
     
     const [itemType, setItemType] =  useState();
     const [ id, setID ] = useState();
@@ -65,10 +66,8 @@ const Inventory = props =>{
             setHelmetInventory(response.data.user.inventoryHelmet);
             setBackgroundInventory(response.data.user.inventoryBackground);
             
-            console.log(armorInventory);
-            
           });
-    }, [])
+    }, [compraRealizada])
 
     const inventario = () => {
         try {
@@ -111,10 +110,11 @@ const Inventory = props =>{
         <div className={styles.challengeBoxContainer}>
                 <div className={styles.challengeNotActive}>
                 <strong>
-                    <img src="icons/chest.png" alt="Inventário" />
+                    <img src="icons/chest2.png" alt="Inventário" />
                     Inventário
                 </strong>
             </div>
+            <p className={styles.text2}>Para equipar, clique no item e no botão "Equipar".</p>
             <div>
                 <a> Armaduras </a> 
             </div>

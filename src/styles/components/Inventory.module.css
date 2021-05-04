@@ -18,6 +18,29 @@
     position: flex;
     border-bottom: 2px solid  darkgoldenrod;
 }
+.text {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+    border: 2px solid  darkgoldenrod;
+    margin-bottom: 0.9rem;
+}
+.text button{
+    background: var(--green);
+    color: var(--white);
+    height: 4rem;
+    border-radius: 4px;
+    font-size: 13pt;
+    cursor: pointer;
+}
+
+
+
+.text2 {
+    text-align: left;
+    border: 2px solid  darkgoldenrod;
+    margin-bottom: 0.5rem;
+}
 
 .challengeBoxContainer div {
     margin-top: 0.5rem;

@@ -8,13 +8,16 @@ import { NumberQuestions } from '../components/NumberQuestions';
 import { Countdown } from '../components/Countdown';
 import { ChallengeBox } from '../components/ChallengeBox';
 import { StudyArea } from '../components/StudyArea';
-import { CountdownProvider } from '../contexts/CountdownContext';
+import { CountdownContext,CountdownProvider } from '../contexts/CountdownContext';
+
+import NotificationSystem from 'react-notification-system';
 
 import styles from '../styles/pages/Home.module.css';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
-import { useEffect, useState } from 'react';
-import { LoginProvider } from '../contexts/LoginContext';
+import React, { useContext, useEffect, useState } from 'react';
+import { LoginContext, LoginProvider } from '../contexts/LoginContext';
 import Cookies from 'js-cookie';
+import { SidebarContext } from '../contexts/SidebarContext';
 
 interface HomeProps {
   username:string;
@@ -27,6 +30,7 @@ interface HomeProps {
   currentMoney: number;
   challengesCompleted: number;
   showChallenge: boolean;
+  isLogged: boolean;
 }
 
 export default function Home(props: HomeProps) {
@@ -34,7 +38,21 @@ export default function Home(props: HomeProps) {
 
   const [ showChallenge, setShowChallenge ] = useState(false);
   const [ idStudyArea, setIdStudyArea ] = useState(null);
+  const { isLogged } = useContext(LoginContext)
+  const {goHome} =useContext(SidebarContext);
   
+  
+  const notificationSystem = React.createRef<any>();
+
+    const addNotification = () => {
+      const notification = notificationSystem.current;
+      notification.addNotification({
+        message: 'Ussuário logado com sucesso!',
+        level: 'success'
+      });
+    };
+
+
   function activeChallenge(){
     setShowChallenge(true);
   }
@@ -50,6 +68,18 @@ export default function Home(props: HomeProps) {
       console.log(idStudyArea);
     }
   }, [idStudyArea,setIdStudyArea]);
+
+  useEffect(() => {
+    if(Cookies.get('isLogged') === 'true'){
+      addNotification();
+      Cookies.set('isLogged', 'false');
+    }
+  }, [isLogged]);
+
+  useEffect(() => {
+    setShowChallenge(false);
+  }, [goHome]);
+
 
   return (
     <LoginProvider
@@ -85,12 +115,16 @@ export default function Home(props: HomeProps) {
               </div>
             </section>
             ) : (
+              <>
+              <h1>Escolha uma área de estudo para iniciar o desafio.</h1>
               <StudyArea setStudyArea={changeStudyArea}/>
+              </>
               )}
         </CountdownProvider>
         </div>
       </div>
     </ChallengesProvider>
+    <NotificationSystem ref={notificationSystem} />
     </LoginProvider>
   )
 }

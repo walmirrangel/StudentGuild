@@ -230,11 +230,13 @@ export function ChallengesProvider({ children, ...rest }: ChallengesProviderProp
     function endChallenge() {
         setActiveChallenge(null);
         var aproveitamento = Math.round((respostasCorretas * 100) / (respostasCorretas + respostasErradas));
+        if (isNaN(aproveitamento)) aproveitamento = 0;
         setAproveitamento(aproveitamento);
         setIsAproveitamentoOpen(true);
         respostasErradas = 0;
         respostasCorretas = 0;
     }
+    
 
     function wrongAnswer() {
         respostasErradas = respostasErradas + 1;

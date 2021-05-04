@@ -93,7 +93,7 @@ const Loja = props =>{
         <div className={styles.challengeBoxContainer}>
                 <div className={styles.challengeNotActive}>
                 <strong>
-                    <img src="icons/chest.png" alt="Inventário" />
+                    <img src="icons/chest2.png" alt="Inventário" />
                     Loja                
                 </strong>
                 

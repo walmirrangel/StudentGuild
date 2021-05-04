@@ -7,6 +7,7 @@ import {
     ReactNode
 }                               from 'react'
 import Router                   from 'next/router'
+import Cookies from 'js-cookie'
 
 interface LoginContextData {
     isLogged:boolean;
@@ -28,13 +29,12 @@ export function LoginProvider({ children, ...rest }: LoginProviderProps) {
     function verifyUser() {
         setIsLogged(true);
         login();
-        
+        Cookies.set('isLogged', 'true');
     }
     
 
 
     function login() { 
-        
         Router.push('/Challenge')
     }
     function logout() {
