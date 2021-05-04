@@ -28,7 +28,7 @@ export function CountdownProvider({children}){
     const [hasFinished, setHasFinished] = useState(false);
     const [stopCount, setStopCount] = useState(answerChallenge);
     
-  const {goHome} =useContext(SidebarContext);
+  const {goHome, goStore, goLeaderboard, goSobre} =useContext(SidebarContext);
 
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
@@ -69,7 +69,7 @@ export function CountdownProvider({children}){
         if(isActive){
             resetCountdown();
         }
-    }, [goHome])
+    }, [goHome, goStore, goLeaderboard, goSobre])
 
     return (
         <CountdownContext.Provider value={{minutes, seconds, hasFinished, isActive, startCountdown, resetCountdown,}}>
