@@ -23,7 +23,7 @@ let countdowntimeout: NodeJS.Timeout;
 export function CountdownProvider({children}){
     const {answerChallenge, endChallenge, startNewChallenge, changeScreenEndChallenge} = useContext(ChallengesContext);
 
-    const [time, setTime] = useState(2 * 60);
+    const [time, setTime] = useState(5 * 60);
     const [isActive, setisActive] = useState(false);
     const [hasFinished, setHasFinished] = useState(false);
     const [stopCount, setStopCount] = useState(answerChallenge);
@@ -40,7 +40,7 @@ export function CountdownProvider({children}){
     function resetCountdown(){
         clearTimeout(countdowntimeout);
         setisActive(false);
-        setTime(2 * 60);
+        setTime(5 * 60);
         setHasFinished(false);
         
         setStopCount(true);
@@ -51,7 +51,7 @@ export function CountdownProvider({children}){
     function resetCountdownOnScreenChange() {
         clearTimeout(countdowntimeout);
         setisActive(false);
-        setTime(2 * 60);
+        setTime(5 * 60);
         setHasFinished(false);
         
         setStopCount(true);
