@@ -4,7 +4,7 @@
     "description": "Armadura do aprendiz",
     "id": 1,
     "image": "armor1.png",
-    "price":40,
+    "price":30,
     "life":"",
     "stamina":""
   },
@@ -13,7 +13,7 @@
     "description": "Armadura do grande mago",
     "id": 2,
     "image": "armor2.png",
-    "price":800,
+    "price":100,
     "life":"",
     "stamina":""
   },
@@ -22,7 +22,7 @@
     "description": "Armadura do gatuno",
     "id": 3,
     "image": "armor3.png",
-    "price":90,
+    "price":60,
     "life":"",
     "stamina":""
   },
@@ -31,7 +31,7 @@
     "description": "Armadura de couro",
     "id": 4,
     "image": "armor4.png",
-    "price":50,
+    "price":40,
     "life":"5",
     "stamina":""
   },
@@ -40,7 +40,7 @@
     "description": "Armadura do rei",
     "id": 5,
     "image": "armor5.png",
-    "price":1000,
+    "price":150,
     "life":"",
     "stamina":""
   }

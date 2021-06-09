@@ -4,7 +4,7 @@
       "description": "Capacete das sombras",
       "id": 1,
       "image": "helmet1.png",
-      "price":200,
+      "price":50,
       "life":"",
       "stamina":""
     },
@@ -13,7 +13,7 @@
       "description": "Capacete do barbaro",
       "id": 2,
       "image": "helmet2.png",
-      "price":80,
+      "price":40,
       "life":"",
       "stamina":""
     },
@@ -22,7 +22,7 @@
       "description": "Chapéu do mago do fogo",
       "id": 3,
       "image": "helmet3.png",
-      "price":800,
+      "price":90,
       "life":"",
       "stamina":""
     },
@@ -31,7 +31,7 @@
       "description": "Capacete do rei dourado",
       "id": 4,
       "image": "helmet4.png",
-      "price":1000,
+      "price":120,
       "life":"5",
       "stamina":""
     },
@@ -40,7 +40,7 @@
       "description": "Capacete de platina",
       "id": 5,
       "image": "helmet5.png",
-      "price":600,
+      "price":80,
       "life":"",
       "stamina":""
     }
