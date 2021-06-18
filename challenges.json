@@ -133,7 +133,7 @@
   },
   {
     "type": "historia",
-    "description": "(Mackenzie) 'Conta a história que, com a ajuda de Atena, Epeu construiu um grande cavalo de madeira, onde escondeu guerreiros. Ulisses ardilosamente introduziu-o em Troia para que os guerreiros a saqueassem.' Em sua obra, o autor transformou a luta pelo controle do estreito de Dardanelos (Helesponto) num conflito envolvendo deuses e heróis. Quem é respectivo autor são:",
+    "description": "'Conta a história que, com a ajuda de Atena, Epeu construiu um grande cavalo de madeira, onde escondeu guerreiros. Ulisses ardilosamente introduziu-o em Troia para que os guerreiros a saqueassem.' Em sua obra, o autor transformou a luta pelo controle do estreito de Dardanelos (Helesponto) num conflito envolvendo deuses e heróis. Quem é respectivo autor são:",
   "answerOptions": [
   {"answerText": "/questionsImages/Ésquilo.jpg", "isCorrect": false},
   {"answerText": "/questionsImages/Platão.jpg", "isCorrect": false},
@@ -205,7 +205,7 @@
   },
   {
     "type": "matematica",
-    "description": "(Cefet/RJ - 2017) Um quadrado de lado x e um triângulo equilátero de lado y possuem áreas de mesma medida. Assim, pode-se afirmar que a razão x/y é igual a:",
+    "description": "Um quadrado de lado x e um triângulo equilátero de lado y possuem áreas de mesma medida. Assim, pode-se afirmar que a razão x/y é igual a:",
   "answerOptions": [
   {"answerText": "/questionsImages/Matematica1.jpg", "isCorrect": false },
   {"answerText": "/questionsImages/Matematica2.jpg", "isCorrect": false},
@@ -241,7 +241,7 @@
   },
   {
     "type": "matematica",
-    "description": "(Enem/2016) O tênis é um esporte em que a estratégia de jogo a ser adotada depende, entre outros fatores, de o adversário ser canhoto ou destro. Um clube tem um grupo de 10 tenistas, sendo que 4 são canhotos e 6 são destros. O técnico do clube deseja realizar uma partida de exibição entre dois desses jogadores, porém, não poderão ser ambos canhotos. Qual o número de possibilidades de escolha dos tenistas para a partida de exibição?",
+    "description": "O tênis é um esporte em que a estratégia de jogo a ser adotada depende, entre outros fatores, de o adversário ser canhoto ou destro. Um clube tem um grupo de 10 tenistas, sendo que 4 são canhotos e 6 são destros. O técnico do clube deseja realizar uma partida de exibição entre dois desses jogadores, porém, não poderão ser ambos canhotos. Qual o número de possibilidades de escolha dos tenistas para a partida de exibição?",
   "answerOptions": [
   {"answerText": "/questionsImages/Mat2.jpg", "isCorrect": false},
   {"answerText": "/questionsImages/Mat1.jpg", "isCorrect": true},
@@ -313,7 +313,7 @@
   },
   {
     "type": "matematica",
-    "description": "(Enem/2016) Para cadastrar-se em um site, uma pessoa precisa escolher uma senha composta por quatro caracteres, sendo dois algarismos e duas letras (maiúsculas ou minúsculas). As letras e os algarismos podem estar em qualquer posição. Essa pessoa sabe que o alfabeto é composto por vinte e seis letras e que uma letra maiúscula difere da minúscula em uma senha. O número total de senhas possíveis para o cadastramento nesse site é dado por",
+    "description": "Para cadastrar-se em um site, uma pessoa precisa escolher uma senha composta por quatro caracteres, sendo dois algarismos e duas letras (maiúsculas ou minúsculas). As letras e os algarismos podem estar em qualquer posição. Essa pessoa sabe que o alfabeto é composto por vinte e seis letras e que uma letra maiúscula difere da minúscula em uma senha. O número total de senhas possíveis para o cadastramento nesse site é dado por",
   "answerOptions": [
   {"answerText": "/questionsImages/T4.jpg", "isCorrect": true},
   {"answerText": "/questionsImages/T2.jpg", "isCorrect": false},
@@ -349,7 +349,7 @@
   },
   {
     "type": "matematica",
-    "description": "(Cefet/MG - 2017) Em um triângulo retângulo, a tangente de um de seus ângulos agudos é 2. Sabendo-se que a hipotenusa desse triângulo é 5, o valor do seno desse mesmo ângulo é",
+    "description": "Em um triângulo retângulo, a tangente de um de seus ângulos agudos é 2. Sabendo-se que a hipotenusa desse triângulo é 5, o valor do seno desse mesmo ângulo é",
   "answerOptions": [
   {"answerText": "/questionsImages/M1.jpg", "isCorrect": false},
   {"answerText": "/questionsImages/M4.jpg", "isCorrect": true},
@@ -421,7 +421,7 @@
     },
     {
       "type": "portugues",
-      "description": "(Mackenzie) A colocação do pronome oblíquo está incorreta em:",
+      "description": "A colocação do pronome oblíquo está incorreta em:",
     "answerOptions": [
     {"answerText": "Para não aborrecê-lo, tive de sair.", "isCorrect": false},
     {"answerText": "Ele me olhou algum tempo comovido.", "isCorrect": false},
@@ -493,7 +493,7 @@
     },
     {
       "type": "portugues",
-      "description": "(Cesgranrio) Assinale a frase em que à ou às está mal empregado.",
+      "description": "Assinale a frase em que à ou às está mal empregado.",
     "answerOptions": [
     {"answerText": "Amores à vista.", "isCorrect": false},
     {"answerText": "Estava meu coração à mercê das paixões.", "isCorrect": false},
@@ -529,7 +529,7 @@
     },
     {
       "type": "portugues",
-      "description": "(CESCEM–SP) Já ___ anos, ___ neste local árvores e flores. Hoje, só ___ ervas daninhas.",
+      "description": "Já ___ anos, ___ neste local árvores e flores. Hoje, só ___ ervas daninhas.",
     "answerOptions": [
     {"answerText": "fazem, havia, existe", "isCorrect": false},
     {"answerText": "fazem, havia, existe", "isCorrect": false},
@@ -565,7 +565,7 @@
       },
       {
         "type": "quimica",
-        "description": "(Unifor) O 2-metilpent-2-eno tem fórmula molecular:",
+        "description": "O 2-metilpent-2-eno tem fórmula molecular:",
       "answerOptions": [
       {"answerText": "/questionsImages/Quimica1.jpg", "isCorrect": true},
       {"answerText": "/questionsImages/Quimica3.jpg", "isCorrect": false},
@@ -637,7 +637,7 @@
       },
       {
         "type": "quimica",
-        "description": "(PUC-PR) Em 100 gramas de alumínio, quantos átomos deste elemento estão presentes? Dados: M(Al) = 27 g/mol 1 mol = 6,02 x 1023 átomos .",
+        "description": "Em 100 gramas de alumínio, quantos átomos deste elemento estão presentes? Dados: M(Al) = 27 g/mol 1 mol = 6,02 x 1023 átomos .",
       "answerOptions": [
       {"answerText": "/questionsImages/Q1.jpg", "isCorrect": false},
       {"answerText": "/questionsImages/Q2.jpg", "isCorrect": false},
@@ -673,7 +673,7 @@
       },
       {
         "type": "quimica",
-        "description": "(PUC-MG) Ao se colocarem hexano (d = 0,66 g/cm3), água (d = 1 g/cm3) e sal (NaCl) em uma vidraria de laboratório conhecida como funil de separação (figura a seguir), assinale o aspecto adequado observado após algum tempo de repouso.",
+        "description": "Ao se colocarem hexano (d = 0,66 g/cm3), água (d = 1 g/cm3) e sal (NaCl) em uma vidraria de laboratório conhecida como funil de separação (figura a seguir), assinale o aspecto adequado observado após algum tempo de repouso.",
       "answerOptions": [
       {"answerText": "/questionsImages/QQ1.jpg", "isCorrect": false},
       {"answerText": "/questionsImages/QQ2.jpg", "isCorrect": false},
@@ -745,7 +745,7 @@
       },
       {
         "type": "fisica",
-        "description": "(PUC/SP - 2018) Um objeto cúbico, maciço e homogêneo, de massa igual a 1500 g, está em repouso sobre uma superfície plana e horizontal. O coeficiente de atrito estático entre o objeto e a superfície é igual a 0,40. Uma força F, horizontal à superfície, é aplicada sobre o centro de massa desse objeto. Que gráfico melhor representa a intensidade da força de atrito estático Fatrito em função da intensidade F da força aplicada? Considere as forças envolvidas em unidades do SI.",
+        "description": "Um objeto cúbico, maciço e homogêneo, de massa igual a 1500 g, está em repouso sobre uma superfície plana e horizontal. O coeficiente de atrito estático entre o objeto e a superfície é igual a 0,40. Uma força F, horizontal à superfície, é aplicada sobre o centro de massa desse objeto. Que gráfico melhor representa a intensidade da força de atrito estático Fatrito em função da intensidade F da força aplicada? Considere as forças envolvidas em unidades do SI.",
       "answerOptions": [
       {"answerText": "/questionsImages/Fisica1.jpg", "isCorrect": false},
       {"answerText": "/questionsImages/Fisica2.jpg", "isCorrect": false},
@@ -781,7 +781,7 @@
       },
       {
         "type": "fisica",
-        "description": "(Enem - 2016) Dois veículos que trafegam com velocidade constante em uma estrada, na mesma direção e sentido, devem manter entre si uma distância mínima. Isso porque o movimento de um veículo, até que ele pare totalmente, ocorre em duas etapas, a partir do momento em que o motorista detecta um problema que exige uma freada brusca. A primeira etapa é associada à distância que o veículo percorre entre o intervalo de tempo da detecção do problema e o acionamento dos freios. Já a segunda se relaciona com a distância que o automóvel percorre enquanto os freios agem com desaceleração constante. Considerando a situação descrita, qual esboço gráfico representa a velocidade do automóvel em relação à distância percorrida até parar totalmente?",
+        "description": "Dois veículos que trafegam com velocidade constante em uma estrada, na mesma direção e sentido, devem manter entre si uma distância mínima. Isso porque o movimento de um veículo, até que ele pare totalmente, ocorre em duas etapas, a partir do momento em que o motorista detecta um problema que exige uma freada brusca. A primeira etapa é associada à distância que o veículo percorre entre o intervalo de tempo da detecção do problema e o acionamento dos freios. Já a segunda se relaciona com a distância que o automóvel percorre enquanto os freios agem com desaceleração constante. Considerando a situação descrita, qual esboço gráfico representa a velocidade do automóvel em relação à distância percorrida até parar totalmente?",
       "answerOptions": [
       {"answerText": "/questionsImages/Fisi4.jpg", "isCorrect": true},
       {"answerText": "/questionsImages/Fisi2.jpg", "isCorrect": false},
@@ -877,7 +877,7 @@
       },
       {
         "type": "fisica",
-        "description": "(UEL-PR) Um corpo de massa m é submetido a uma força resultante de módulo F, adquirindo aceleração a. A força resultante que se deve aplicar a um corpo de massa m/2 para que ele adquira aceleração 4a deve ter módulo:",
+        "description": "Um corpo de massa m é submetido a uma força resultante de módulo F, adquirindo aceleração a. A força resultante que se deve aplicar a um corpo de massa m/2 para que ele adquira aceleração 4a deve ter módulo:",
       "answerOptions": [
       {"answerText": "", "isCorrect": false, "hidden": true},
       {"answerText": "", "isCorrect": false, "hidden": true},
@@ -889,7 +889,7 @@
       },
       {
         "type": "fisica",
-        "description": "(Mackenzie-SP) Joãozinho abandona do alto de uma torre um corpo a partir do repouso. Durante a queda livre, com g constante, ele observa que nos dois primeiros segundos o corpo percorre a distância D. A distância percorrida pelo corpo nos 4 s seguintes será:",
+        "description": "Joãozinho abandona do alto de uma torre um corpo a partir do repouso. Durante a queda livre, com g constante, ele observa que nos dois primeiros segundos o corpo percorre a distância D. A distância percorrida pelo corpo nos 4 s seguintes será:",
       "answerOptions": [
       {"answerText": "/questionsImages/FFF1.jpg", "isCorrect": false},
       {"answerText": "/questionsImages/FFF2.jpg", "isCorrect": false},
