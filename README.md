@@ -39,21 +39,13 @@ Se trata de um aplicativo de teste de conhecimentos dentro de um ambiente que si
     - Questões de imagens, o jogador deve escolher a imagem que representa o que foi pedido na questão.
 * Ao passar de nível será aberta uma janela informando sua conquista.
 * Ao ter sua vida ou estamina abaixo de 10, uma janela será aberta informando que você não pode continuar o desafio e as perguntas deixarão de aparecer na tela até o jogador acumular pelo menos 10 pontos em vida e estamina.
+* Loja onde é possível realizar a compra de itens para personalizar seu Avatar
+* Ranking para verificar a posição dos usuários cadastrados na aplicação
+
 
 # Layout da aplicação
-<h3>Core da aplicação</h3>
-<img width="500" height="300" src="public/assets/pagina1.jpg">
-<img width="500" height="300" src="public/assets/pagina2.jpg">
+<h3>EM construção.</h3>
 
-
-<h3>Questões</h3>
-<img width="500" height="300" src="public/assets/questao1.jpg">
-<img width="500" height="300" src="public/assets/questao2.jpg">
-<img width="500" height="300" src="public/assets/questão3.jpg">
-
-<h3>Janelas informando level up e impossibilidade de continuar</h3>
-<img width="500" height="300" src="public/assets/levelup.jpg">
-<img width="500" height="300" src="public/assets/vidaestaminabaixa.jpg">
 
 # Tecnologias
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
